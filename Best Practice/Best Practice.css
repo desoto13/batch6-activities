@@ -1,0 +1,37 @@
+body {
+    background-image: url(https://static.wikia.nocookie.net/assassinscreed/images/5/5a/AC2_Memory_Corridor.png/revision/latest?cb=20121008163636);
+}
+
+.ImgContainer{
+    position: relative;
+    text-align: center;
+}
+
+.ImgContainer img{
+    width:50%;
+    height:100%;
+}
+
+.Thought{
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    opacity: 0;
+}
+
+.ImgContainer:hover .Thought{
+    opacity: 1;
+}
+
+.Thought h1{
+    font-size: 2vw;
+}
+
+.Book{
+    position: absolute;
+    top: 53%;
+    right: 32%;
+    font-size: 1vw;
+}
+
+
