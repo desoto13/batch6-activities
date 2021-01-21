@@ -2,7 +2,7 @@
 body {
     background-image: url(assets/RKBackground.jpg);
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 
 @import url(https://allfont.net/allfont.css?fonts=norwester);
@@ -20,7 +20,7 @@ h1 {
     align-items: center;
     justify-content: center;
     background-image: url(https://ak.picdn.net/shutterstock/videos/1015342855/thumb/1.jpg?ip=x480);
-    background-size: 100%;
+    background-size: cover;
     padding: 20px;
     margin-right: 25vw;
     margin-left: 25vw;
@@ -41,7 +41,7 @@ h1 {
 
 .books {
     font-family: 'Norwester', arial;
-    background: white;
+    background:whitesmoke;
     font-size: 3vw;
     margin-right: 30vw;
     margin-left: 30vw;
@@ -56,28 +56,29 @@ h1 {
     margin-bottom: 25vh;
 }
 
-.book-1 {
+/* .book-1 {
     display:flex;
     background-color: #0F89CA;
     color: white;
     margin-right: 15vw;
     margin-left: 15vw;
-}
+} */
 
-.book-2 {
+.book-1, .book-2, .book-3 {
     display:flex;
-    background-color: #F0E995;
+    /* background-color: #F0E995; */
     margin-right: 15vw;
     margin-left: 15vw;
+    background-image: url(https://images.unsplash.com/photo-1527176930608-09cb256ab504?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80);
 }
 
-.book-3 {
+/* .book-3 {
     display:flex;
     background-color: #0F89CA;
     color: white;
     margin-right: 15vw;
     margin-left: 15vw;
-}
+} */
 
 .picture {
     height: 50vh;
