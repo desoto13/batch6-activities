@@ -1,0 +1,99 @@
+
+body {
+    background-image: url(assets/RKBackground.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+@import url(https://allfont.net/allfont.css?fonts=norwester);
+h1 {
+    text-align: center;
+    font-family: 'Norwester', arial;
+    color: white;
+    font-size: 4.3vw;
+    margin-bottom: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://ak.picdn.net/shutterstock/videos/1015342855/thumb/1.jpg?ip=x480);
+    background-size: 100%;
+    padding: 20px;
+    margin-right: 25vw;
+    margin-left: 25vw;
+    margin-bottom: 50vh;
+}
+
+
+#tribute-info {
+    font-family: Verdana, sans-serif;
+    line-height: 2;
+    background-color:white;
+}
+
+#img-caption {
+    font-family: 'Norwester', arial;
+    color: black;
+}
+
+.books {
+    font-family: 'Norwester', arial;
+    background: white;
+    font-size: 3vw;
+    margin-right: 30vw;
+    margin-left: 30vw;
+    text-align: center;
+}
+
+.bookshelf {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25vh;
+}
+
+.book-1 {
+    display:flex;
+    background-color: #0F89CA;
+    color: white;
+    margin-right: 15vw;
+    margin-left: 15vw;
+}
+
+.book-2 {
+    display:flex;
+    background-color: #F0E995;
+    margin-right: 15vw;
+    margin-left: 15vw;
+}
+
+.book-3 {
+    display:flex;
+    background-color: #0F89CA;
+    color: white;
+    margin-right: 15vw;
+    margin-left: 15vw;
+}
+
+.picture {
+    height: 50vh;
+    width: 15vw;
+}
+
+dt {
+    font-size: 2vw;
+}
+
+dd {
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+footer {
+    font-family: 'Norwester', arial;
+    color: #1DA2DC;
+}
