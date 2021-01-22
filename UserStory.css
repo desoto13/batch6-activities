@@ -2,7 +2,7 @@
 body {
     background-image: url(assets/RKBackground.jpg);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100vw;
     background-repeat: no-repeat;
 }
 
@@ -28,16 +28,23 @@ h1 {
     margin-bottom: 50vh;
 }
 
+#image {
+    height: 50vh;
+    width: 17.5vw;
+}
+
 
 #tribute-info {
     font-family: Verdana, sans-serif;
     line-height: 2;
     background-color:white;
+    font-size: 1.1vw;
 }
 
 #img-caption {
     font-family: 'Norwester', arial;
     color: black;
+    font-size: 2vw;
 }
 
 .books {
@@ -95,6 +102,7 @@ dt {
 dd {
     font-family: Verdana, sans-serif;
     line-height: 1.5;
+    font-size: 1.1vw;
 }
 
 footer {
