@@ -1,0 +1,153 @@
+
+#main {
+    /* background-image: url(assets/RKBackground.jpg); */
+    /* background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+    background-color: black;
+}
+
+@import url(https://allfont.net/allfont.css?fonts=norwester);
+h1 {
+    font-size: 2.1vw;
+}
+.container {
+    position: relative;
+}
+
+#image {
+    height:100vh;
+    width: 100%;
+}
+
+.text-block {
+    font-family: 'Norwester', arial;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: white;
+    margin-left: 60vw;
+}
+
+h2, h3, p {
+    text-align: center;
+    line-height: 0.5;
+}
+
+h2 {
+    font-size: 1.6vw;
+}
+
+h3 {
+    font-size: 1.25vw;
+}
+
+p {
+    font-size: 1.1vw;
+}
+
+.desc {
+    font-family: Helvetica, sans-serif;
+    position: relative;
+    color: white;
+    font-size: 2.1vw;
+    text-align: center;
+    margin-left: 30vw;
+}
+
+.books {
+    font-family: 'Norwester', arial;
+    color: white;
+    font-size: 3vw;
+    text-align:start;
+    margin-bottom: 0%;
+    margin-top: 10vh;
+}
+
+.timeline {
+    display: flex;
+    }
+
+.earlytitle, .midtitle, .endtitle {
+    border-radius: 15px;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2vw;
+    padding: 7;
+    padding: 5%;
+    background-color: white;
+}
+
+.family, .education, .business {
+    flex: 1
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+ul {
+    border-radius: 15px;
+    font-family: 'Bentham', serif;
+    line-height: 1.5;
+    font-size: 1.1vw;
+    color:white;
+    opacity: 0;
+    background-size: cover;
+    align-items: stretch;
+}
+
+.earlydescription {
+    background-image: url(https://www.fg-a.com/wallpapers/2020-black-family-silhouette-nature.jpg);
+    background-position: center center;
+}
+
+.middescription {
+    background-image: url(https://library.kissclipart.com/20180928/cww/kissclipart-blackboard-vector-clipart-blackboard-learn-arbel-c-5773a09629cdf412.png);
+    background-position: center center;
+}
+
+.enddescription {
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_our/20190623/ourmid/pngtree-black-business-atmosphere-business-card-background-image_239814.jpg);
+    background-position: center center;
+}
+
+.earlytitle:hover, .midtitle:hover, .endtitle:hover {
+    color: white;
+    background-color: black;
+}
+
+.earlytitle:hover + .earlydescription, .midtitle:hover + .middescription, .endtitle:hover + .enddescription {
+    opacity: 1;
+}
+
+.bookshelf {
+    background-image: url(https://images.unsplash.com/photo-1527176930608-09cb256ab504?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 5%;
+}
+
+.picture {
+    height: 55vh;
+    width: 15vw;
+}
+
+dt {
+    font-size: 2vw;
+}
+
+dd {
+    font-family: Verdana, sans-serif;
+    line-height: 1.5;
+    font-size: 1.1vw;
+}
+
+footer {
+    font-family: 'Norwester', arial;
+    color: #1DA2DC;
+}
