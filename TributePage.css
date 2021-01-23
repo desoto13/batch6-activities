@@ -1,14 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+@import url(https://allfont.net/allfont.css?fonts=norwester);
 
 #main {
-    /* background-image: url(assets/RKBackground.jpg); */
-    /* background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; */
     background-color: black;
 }
 
-@import url(https://allfont.net/allfont.css?fonts=norwester);
 h1 {
     font-size: 2.1vw;
 }
@@ -56,8 +52,9 @@ p {
     margin-left: 30vw;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 .books {
-    font-family: 'Norwester', arial;
+    font-family: 'Bungee', cursive;
     color: black;
     font-size: 3vw;
     text-align:center;
@@ -89,7 +86,7 @@ p {
     flex: 1
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+
 ul {
     border-radius: 15px;
     font-family: 'Bentham', serif;
@@ -142,3 +139,5 @@ ul {
     height: 55vh;
     width: 15vw;
 }
+
+
