@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 @import url(https://allfont.net/allfont.css?fonts=norwester);
 
+html {
+    scroll-behavior: smooth;
+}
 #main {
     background-color: black;
 }
 
 h1 {
     font-size: 2.1vw;
+    font-family: 'Norwester', arial;
 }
 .container {
     position: relative;
@@ -18,7 +22,6 @@ h1 {
 }
 
 .text-block {
-    font-family: 'Norwester', arial;
     position: absolute;
     top: 10%;
     right: 10%;
@@ -33,14 +36,42 @@ h2, h3, p {
 
 h2 {
     font-size: 1.6vw;
+    font-family: 'Norwester', arial;
 }
 
-h3 {
-    font-size: 1.25vw;
+#tribute-info, #img-caption {
+    margin-top: 0;
+    text-align: end;
 }
+
+#tribute-info {
+    margin-bottom: 10vh;
+}
+
+
+.about, .featured {
+    font-size: 1.25vw;
+    /* margin-top: 10vh; */
+    padding: 5%;
+    border-radius: 15px;
+    color: black;
+    background-color: white;
+}
+
+.about:hover, .featured:hover {
+    background-color: silver;
+}
+
+
 
 p {
     font-size: 1.1vw;
+    font-family: 'Norwester', arial;
+}
+
+.button {
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .desc {
@@ -53,14 +84,14 @@ p {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-.books {
+#books1, #books2 {
     font-family: 'Bungee', cursive;
     color: black;
     font-size: 3vw;
     text-align:center;
     margin-bottom: 0%;
     margin-top: 0%;
-    background-color: white;
+    background-color:gold;
 }
 
 .timeline {
@@ -77,8 +108,8 @@ p {
     font-size: 2vw;
     padding: 7;
     padding: 5%;
-    background-color: white;
-    color: black;
+    background-color: rgb(207, 13, 207);
+    color:yellow;
     
 }
 
@@ -119,6 +150,14 @@ ul {
 }
 
 .earlytitle:hover + .earlydescription, .midtitle:hover + .middescription, .endtitle:hover + .enddescription {
+    opacity: 1;
+}
+
+.earlydescription:hover, .middescription:hover, .enddescription:hover {
+    opacity: 1;
+}
+
+.earlydescription:hover, .middescription:hover, .enddescription:hover {
     opacity: 1;
 }
 
