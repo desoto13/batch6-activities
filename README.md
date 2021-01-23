@@ -19,4 +19,4 @@ The requirement of this activity is to create an HTML template that would simula
 
 [TRIBUTE PAGE](https://desoto13.github.io/batch6-activities/UserStory)
 
-This activity requires to make a tribute page to someone whom we look up to. This is a training exercise for User Story using HTML and CSS from scratch.
+This activity requires to make a tribute page to someone whom we look up to. This is a training exercise for using HTML and CSS from scratch.
