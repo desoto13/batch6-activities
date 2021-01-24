@@ -63,6 +63,10 @@ main {
     width: 100%;
 }
 
+textarea {
+    resize: none;
+}
+
 
 button {
     border-radius: 15px;
