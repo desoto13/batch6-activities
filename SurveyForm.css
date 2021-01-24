@@ -1,0 +1,81 @@
+body {
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/538/529/non_2x/abstract-technology-arrow-icon-and-computer-code-programming-coding-hacker-concept-background-vector.jpg);
+    background-size: cover
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Share+Tech+Mono&display=swap');
+h1, #description {
+    font-family: 'Share Tech Mono', monospace;
+    color:whitesmoke;
+    text-align: center;
+}
+
+main {
+    background-color: rgb(127, 255, 212, 0.5);
+    border-radius: 15px;
+    width: 100%;
+    font-family: Verdana, sans-serif;
+    color: white;
+    padding: 2%;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        width: 30%;
+        margin-left:33%;
+        padding: 2%;
+        margin-bottom: 10%;
+    }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 2%;
+}
+
+#name, #email, #number, #dropdown, #comment {
+    margin-bottom: 2%;
+    background-color: rgb(0, 0, 128, 0.5);
+    font-family: Verdana, sans-serif;
+    border-radius: 15px;
+    
+}
+
+#name, #email, #number, #dropdown {
+    color: white;
+    height: 4vh;
+}
+
+.check {
+    display: flex;
+    margin-bottom: 4%;
+}
+
+.check1, .check2, .check3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#comment {
+    width: 100%;
+}
+
+
+button {
+    border-radius: 15px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 100%;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2vw;
+    background-color: green;
+    color: white;
+}
+
+button:hover {
+    background-color: gold;
+    color: black;
+}

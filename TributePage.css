@@ -1,5 +1,5 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
-@import url(https://allfont.net/allfont.css?fonts=norwester);
 
 html {
     scroll-behavior: smooth;
@@ -8,6 +8,7 @@ html {
     background-color: black;
 }
 
+@import url(https://allfont.net/allfont.css?fonts=norwester);
 h1 {
     font-size: 2.1vw;
     font-family: 'Norwester', arial;
@@ -33,6 +34,7 @@ h2, h3, p {
     text-align: center;
     line-height: 0.5;
 }
+
 
 h2 {
     font-size: 1.6vw;

@@ -1,7 +1,123 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Survey</title>
+        <title>Application Form</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="SurveyForm.css">
     </head>
+    <body>
+        <h1 id="title">JOB APPLICATION FORM</h1>
+        <p id="description">Please fill out for processing of application</p>
+
+        <main>
+            <form id="survey-form" action="SupportPage/SurveyFinish.html">
+                <div class="info">
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name here">
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email here">
+
+                    <label for="number" id="number-label">Mobile number:</label>
+                    <input type="number" name="mobile" id="number" min=9070000000 max=9809999999 placeholder="Enter your number here">
+                </div>
+
+                <div class="domain">
+                Applying for which domain?<br><br>
+                    <input type="radio" name="domain" id="frontend">
+                    <label for="frontend">Frontend</label><br>
+
+                    <input type="radio" name="domain" id="backend">
+                    <label for="backend">Backend</label><br>
+
+                    <input type="radio" name="domain" id="fullstack">
+                    <label for="fullstack">Full-stack</label><br>
+
+                    <input type="radio" name="domain" id="devops">
+                    <label for="devops">DevOps</label><br>
+
+                    <input type="radio" name="domain" id="uiux">
+                    <label for="uiux">UI/UX</label>
+                </div><br>
+
+                <label for="dropdown">Years of Experience:</label>
+                <select name="Years" id="dropdown">
+                    <option value="less1">less than 1 year</option>
+                    <option value="1to2">1 to 2 years</option>
+                    <option value="2to5" selected>2 to 5 years</option>
+                    <option value="5to10">5 to 10 years</option>
+                    <option value="more10">more than 10 years</option>
+                </select><br><br>
+
+                Programming Experience:(Check all applicable)<br><br>
+                <div class="check">
+                    <div class="check1">
+                        <div>
+                            <input type="checkbox" name="programming" id="HTML">
+                            <label for="HTML">HTML</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="programming" id="CSS">
+                            <label for="CSS">CSS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="programming" id="Javascript">
+                            <label for="Javascript">Javascript</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="programming" id="ReactJS">
+                            <label for="ReactJS">ReactJS</label>
+                        </div>
+                    </div>
+
+                    <div class="check2">
+                        <div>
+                            <input type="checkbox" name="programming" id="AngularJS">
+                            <label for="AngularJS">AngularJS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="programming" id="NodeJS">
+                            <label for="NodeJS">NodeJS</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="programming" id="Java">
+                            <label for="Java">Java</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="programming" id="C">
+                            <label for="C">C</label>
+                        </div>
+                    </div>
+
+                    <div class="check3">
+                        <div>
+                            <input type="checkbox" name="programming" id="Csharp">
+                            <label for="Csharp">C#</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="programming" id="Cplusplus">
+                            <label for="Cplusplus">C++</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="programming" id="Python">
+                            <label for="Python">Python</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="programming" id="Ruby">
+                            <label for="Ruby">Ruby</label>
+                        </div>
+                    </div>
+
+                </div>
+
+                Additional skills and portfolio link:
+                <textarea name="comment" id="comment" cols="40" rows="10" placeholder="Input here"></textarea>
+                <br>
+
+                <button id="submit">Submit</button>
+
+            </form>
+        </main>
+
+    </body>
 
 </html>

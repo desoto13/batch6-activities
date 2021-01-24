@@ -1,0 +1,24 @@
+body {
+    background-image: url(SupportBG.jpeg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Share+Tech+Mono&display=swap');
+
+.text-block {
+    position: absolute;
+    font-family: 'Share Tech Mono', monospace;
+    color:whitesmoke;
+    top: 20%;
+    right: 10%;
+
+}
+
+h1 {
+    font-size: 4vw;
+}
+
+p {
+    font-size: 2vw;
+}
