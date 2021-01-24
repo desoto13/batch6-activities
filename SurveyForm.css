@@ -28,7 +28,7 @@ main {
     }
 }
 
-.info {
+.info, .resume {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -57,6 +57,14 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+.resume {
+    margin-bottom: 4%;
+}
+
+#cvfile {
+    font-family: 'Share Tech Mono', monospace;
 }
 
 #comment {
