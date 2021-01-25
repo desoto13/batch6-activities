@@ -13,17 +13,17 @@
             <form id="survey-form" action="SupportPage/SurveyFinish.html">
                 <div class="info">
                     <label for="name" id="name-label">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter your name here">
+                    <input type="text" name="name" id="name" placeholder="Enter your name here" required>
                     <label for="email" id="email-label">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email here">
+                    <input type="email" name="email" id="email" placeholder="Enter your email here" required>
 
                     <label for="number" id="number-label">Mobile number:</label>
-                    <input type="number" name="mobile" id="number" min=9070000000 max=9809999999 placeholder="Enter your number here">
+                    <input type="number" name="mobile" id="number" min=9070000000 max=9809999999 placeholder="Enter your number here" required>
                 </div>
 
                 <div class="domain">
                 Applying for which domain?<br><br>
-                    <input type="radio" name="domain" id="frontend">
+                    <input type="radio" name="domain" id="frontend" required>
                     <label for="frontend">Frontend</label><br>
 
                     <input type="radio" name="domain" id="backend">
@@ -111,7 +111,7 @@
 
                 <div class="resume">
                     <label for="cvfile">Upload CV/Resume:</label><br>
-                    <input type="file" name="upload" id="cvfile">
+                    <input type="file" name="upload" id="cvfile" required>
                 </div>
 
                 Additional skills and portfolio link:
