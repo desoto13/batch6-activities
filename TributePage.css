@@ -5,7 +5,11 @@ html {
     scroll-behavior: smooth;
 }
 #main {
-    background-color: black;
+    /* background-color: black; */
+    background-image: url(https://image.freepik.com/free-vector/modern-design-stick-candle-graph-stock-market-investment-trading-dark-background_159711-163.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 @import url(https://allfont.net/allfont.css?fonts=norwester);
@@ -20,6 +24,7 @@ h1 {
 #image {
     height:100vh;
     width: 100%;
+    margin-bottom: 20%;
 }
 
 .text-block {
@@ -87,7 +92,7 @@ p {
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 #books1, #books2 {
-    font-family: 'Bungee', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif, cursive;
     color: black;
     font-size: 3vw;
     text-align:center;
@@ -101,6 +106,7 @@ p {
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTElbPN4zJE77g7PopXk2p69bCzp_ueOTmpg&usqp=CAU);
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 20%;
     }
 
 .earlytitle, .midtitle, .endtitle {
@@ -174,11 +180,19 @@ ul {
     background-repeat: no-repeat;
     background-position: center center;
     padding: 5%;
+    margin-bottom: 5%;
 }
 
 .picture {
     height: 55vh;
     width: 15vw;
+}
+
+.pic-img {
+    height: 10vh;
+    width: 5vw;
+    margin-left: 47.5vw;
+    margin-bottom: 5%;
 }
 
 
