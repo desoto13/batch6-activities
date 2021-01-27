@@ -26,3 +26,11 @@ This activity requires to make a tribute page to someone whom we look up to. Thi
 [SURVEY FORM](https://desoto13.github.io/batch6-activities/SurveyForm)
 
 The requirement of this activity is to create a Survey Form type of page. This is a training exercise for using forms in HTML and CSS.
+
+<br>
+
+[CHESS BOARD](https://desoto13.github.io/batch6-activities/ChessBoard)
+
+This activity requires to make a chessboard using flex in which all 64 squares should always be visible and should always be squares. This is a training exercise in using flex box.
+
+
