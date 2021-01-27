@@ -1,0 +1,59 @@
+body {
+    background-image:url('https://wallpaperaccess.com/full/4722435.jpg'); 
+    /* background-repeat:repeat; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap');
+
+h1 {
+    font-family: 'Arvo', serif;
+    /* color: #6B0F1A; */
+    color: brown;
+    font-size: 3vw;
+}
+
+h1, .board {
+    text-align: center;
+    position: relative;
+    margin-left: 30vw;
+    margin-right: 30vw;
+}
+
+
+.board {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black;
+    background-color: blue; */
+    width: 40vw;
+    height: 40vw;
+}
+
+.row{
+    display:flex;
+    /* flex-direction: column; */
+    align-items:stretch;
+}
+
+.white {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://t4.ftcdn.net/jpg/03/09/59/67/240_F_309596715_WW2UlUaBQrRzq49M1ad1hfk5OMFLt1RG.jpg);
+    width: 5vw;
+    height: 5vw;
+    object-fit: cover;
+    font-size: 5vw;
+}
+
+.black {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A8763E;
+    width: 5vw;
+    height: 5vw;
+    font-size: 5vw;
+}
