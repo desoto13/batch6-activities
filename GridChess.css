@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@1,700&display=swap');
+
+body {
+    background-color: #BF98A0;
+}
+
+    h1 {
+        font-family: 'Arvo', serif;
+        color: #a52a2a;
+        font-size: 3vw;
+        text-align: center;
+    }
+
+    .board {
+        display: grid; 
+        grid-template-columns: repeat(8, 5vw) ;
+        grid-template-rows: repeat(8, 5vw);
+        font-size: 4vw;
+        place-content: center center;
+    }
+
+        .white {
+            display: grid;
+            background-color: #cffaeb;
+            place-content: center center;
+        }
+
+        .black {
+            display: grid;
+            background-color: #5f9ea0;
+            place-content: center center;
+        }
+
+        .white:hover, .black:hover {
+            background-color: blue;
+        }
+
+        .bRook:hover, .bKnight:hover, .bBishop:hover, .bQueen:hover, .bKing:hover , .bPawn:hover,
+        .wRook:hover, .wKnight:hover, .wBishop:hover, .wQueen:hover, .wKing:hover , .wPawn:hover {
+            cursor: webkit-grabbing; 
+            cursor: grabbing;
+        }
+
+
+
