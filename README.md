@@ -29,8 +29,14 @@ The requirement of this activity is to create a Survey Form type of page. This i
 
 <br>
 
-[CHESS BOARD](https://desoto13.github.io/batch6-activities/ChessBoard)
+[FLEX CHESS](https://desoto13.github.io/batch6-activities/ChessBoard)
 
 This activity requires to make a chessboard using flex in which all 64 squares should always be visible and should always be squares. This is a training exercise in using flex box.
+
+<br>
+
+[GRID CHESS](https://desoto13.github.io/batch6-activities/GridChess)
+
+This activity requires to make a chessboard using flex in which all 64 squares should always be visible and should always be squares. This is a training exercise in using grid.
 
 
