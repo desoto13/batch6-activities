@@ -32,14 +32,20 @@ body {
         }
 
         .white:hover, .black:hover {
-            background-color: blue;
-        }
-
-        .bRook:hover, .bKnight:hover, .bBishop:hover, .bQueen:hover, .bKing:hover , .bPawn:hover,
-        .wRook:hover, .wKnight:hover, .wBishop:hover, .wQueen:hover, .wKing:hover , .wPawn:hover {
+            background-color: #0000ff;
             cursor: webkit-grabbing; 
             cursor: grabbing;
         }
+
+        .blue {
+            background-color: #0000ff;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        
 
 
 

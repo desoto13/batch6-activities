@@ -6,81 +6,81 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="GridChess.css">
     </head>
-    <body>
+    <body onclick="printID(this.id);"    >
         <h1>Grid Chess</h1>
         <div class="board">
 
-                <div class="white"><div class="bRook" onclick="moveFunc(this)">&#9820;</div></div>
-                <div class="black"><div class="bKnight" onclick="moveFunc(this)">&#9822;</div></div>
-                <div class="white"><div class="bBishop" onclick="moveFunc(this)">&#9821;</div></div>
-                <div class="black"><div class="bQueen" onclick="moveFunc(this)">&#9819;</div></div>
-                <div class="white"><div class="bKing" onclick="moveFunc(this)">&#9818;</div></div>
-                <div class="black"><div class="bBishop" onclick="moveFunc(this)">&#9821;</div></div>
-                <div class="white"><div class="bKnight" onclick="moveFunc(this)">&#9822;</div></div>
-                <div class="black"><div class="bRook" onclick="moveFunc(this)">&#9820;</div></div>
+                <div class="white" id="a8">&#9820;</div>
+                <div class="black" id="b8">&#9822;</div>
+                <div class="white" id="c8">&#9821;</div>
+                <div class="black" id="d8">&#9819;</div>
+                <div class="white" id="e8">&#9818;</div>
+                <div class="black" id="f8">&#9821;</div>
+                <div class="white" id="g8">&#9822;</div>
+                <div class="black" id="h8">&#9820;</div>
 
-                <div class="black" onclick="RecFunc(x,this)"><div class="bPawn">&#9823;</div></div>
-                <div class="white"><div class="bPawn">&#9823;</div></div>
-                <div class="black"><div class="bPawn">&#9823;</div></div>
-                <div class="white"><div class="bPawn">&#9823;</div></div>
-                <div class="black"><div class="bPawn">&#9823;</div></div>
-                <div class="white"><div class="bPawn">&#9823;</div></div>
-                <div class="black"><div class="bPawn">&#9823;</div></div>
-                <div class="white"><div class="bPawn">&#9823;</div></div>
+                <div class="black" id="a7">&#9823;</div>
+                <div class="white" id="b7">&#9823;</div>
+                <div class="black" id="c7">&#9823;</div>
+                <div class="white" id="d7">&#9823;</div>
+                <div class="black" id="e7">&#9823;</div>
+                <div class="white" id="f7">&#9823;</div>
+                <div class="black" id="g7">&#9823;</div>
+                <div class="white" id="h7">&#9823;</div>
 
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
+                <div class="white" id="a6"></div>
+                <div class="black" id="b6"></div>
+                <div class="white" id="c6"></div>
+                <div class="black" id="d6"></div>
+                <div class="white" id="e6"></div>
+                <div class="black" id="f6"></div>
+                <div class="white" id="g6"></div>
+                <div class="black" id="h6"></div>
 
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
+                <div class="black" id="a5"></div>
+                <div class="white" id="b5"></div>
+                <div class="black" id="c5"></div>
+                <div class="white" id="d5"></div>
+                <div class="black" id="e5"></div>
+                <div class="white" id="f5"></div>
+                <div class="black" id="g5"></div>
+                <div class="white" id="h5"></div>
 
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
+                <div class="white" id="a4"></div>
+                <div class="black" id="b4"></div>
+                <div class="white" id="c4"></div>
+                <div class="black" id="d4"></div>
+                <div class="white" id="e4"></div>
+                <div class="black" id="f4"></div>
+                <div class="white" id="g4"></div>
+                <div class="black" id="h4"></div>
 
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
-                <div class="black"></div>
-                <div class="white"></div>
+                <div class="black" id="a3"></div>
+                <div class="white" id="b3"></div>
+                <div class="black" id="c3"></div>
+                <div class="white" id="d3"></div>
+                <div class="black" id="e3"></div>
+                <div class="white" id="f3"></div>
+                <div class="black" id="g3"></div>
+                <div class="white" id="h3"></div>
 
-                <div class="white"><div class="wPawn">&#9817;</div></div>
-                <div class="black"><div class="wPawn">&#9817;</div></div>
-                <div class="white"><div class="wPawn">&#9817;</div></div>
-                <div class="black"><div class="wPawn">&#9817;</div></div>
-                <div class="white"><div class="wPawn">&#9817;</div></div>
-                <div class="black"><div class="wPawn">&#9817;</div></div>
-                <div class="white"><div class="wPawn">&#9817;</div></div>
-                <div class="black"><div class="wPawn">&#9817;</div></div>
+                <div class="white" id="a2">&#9817;</div>
+                <div class="black" id="b2">&#9817;</div>
+                <div class="white" id="c2">&#9817;</div>
+                <div class="black" id="d2">&#9817;</div>
+                <div class="white" id="e2">&#9817;</div>
+                <div class="black" id="f2">&#9817;</div>
+                <div class="white" id="g2">&#9817;</div>
+                <div class="black" id="h2">&#9817;</div>
 
-                <div class="black"><div class="wRook">&#9814;</div></div>
-                <div class="white"><div class="wKnight">&#9816;</div></div>
-                <div class="black"><div class="wBishop">&#9815;</div></div>
-                <div class="white"><div class="wQueen">&#9813;</div></div>
-                <div class="black"><div class="wKing">&#9812;</div></div>
-                <div class="white"><div class="wBishop">&#9815;</div></div>
-                <div class="black"><div class="wKnight">&#9816;</div></div>
-                <div class="white"><div class="wRook">&#9814;</div></div>
+                <div class="black" id="a1">&#9814;</div>
+                <div class="white" id="b1">&#9816;</div>
+                <div class="black" id="c1">&#9815;</div>
+                <div class="white" id="d1">&#9813;</div>
+                <div class="black" id="e1">&#9812;</div>
+                <div class="white" id="f1">&#9815;</div>
+                <div class="black" id="g1">&#9816;</div>
+                <div class="white" id="h1">&#9814;</div>
         </div>
     </body>
     <script src="GridChess.js"></script>
