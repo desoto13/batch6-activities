@@ -1,6 +1,5 @@
 body {
     background-image:url('https://wallpaperaccess.com/full/4722435.jpg'); 
-    /* background-repeat:repeat; */
     background-size: cover;
     background-attachment: fixed;
 }
@@ -9,8 +8,7 @@ body {
 
 h1 {
     font-family: 'Arvo', serif;
-    /* color: #6B0F1A; */
-    color: brown;
+    color: rgb(161, 27, 27);
     font-size: 3vw;
 }
 
@@ -25,15 +23,12 @@ h1, .board {
 .board {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid black;
-    background-color: blue; */
     width: 40vw;
     height: 40vw;
 }
 
 .row{
     display:flex;
-    /* flex-direction: column; */
     align-items:stretch;
 }
 
