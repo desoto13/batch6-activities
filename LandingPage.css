@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700;1,800&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Nunito+Sans&display=swap');
+body{
+    margin: 0;
+}
+
+/* Header of Landing Page */
+
+    .sticky {
+        position: fixed;
+        top: 0;
+    }
+  
+    .head {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(167, 216, 246);
+        width:100%;
+        /* z-index: 2; */
+    }
+
+        .h-logo {
+            display:flex;
+            align-items: center;
+            
+        }
+
+            #header-img {
+                padding-top: 0.1vw;
+                padding-bottom: 0.1vw;
+                padding-left: 7.5vw;
+            }
+
+        nav {
+            display: flex;
+            align-items: center;
+            }
+        
+            .nav-link {
+                padding-top: 0.1vw;
+                padding-bottom: 0.1vw;
+                font-size: 20px;
+                padding-right: 5vw;
+                font-family: 'Nunito Sans', sans-serif;
+                color: #2B4381;
+                font-weight:800;
+            }
+
+            #about:hover, #services:hover, #contact:hover {
+                color: blue;
+                font-size: 25px;
+                transition: all 0.4s ease;
+                -webkit-transition: all 0.4 ease;
+                cursor:pointer;
+            }
+
+            #header-img:hover {
+                cursor:pointer;
+            }
+
+            .search {
+                border-radius: 15px;
+                margin-right: 5vw;
+                height: 25px;
+                background: rgb(220, 237, 247);
+            }
+
+/* Initial part of Landing Page */
+
+    .ads {
+        height: 90vh;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .firm {
+        height: 660px;
+        width: 64.7%;
+    }
+
+    .text-block {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    margin-left: 70vw;
+    width: 30vw;
+    }
+
+        .titletext {
+            display: none;
+            font-size: 50px;
+            color: #2B4381;
+            text-align: center;
+        }
+
+        .company {
+            /* color: #F58F29; */
+            color: #C59849;
+            /* color: #2B4381; */
+            font-size: 30px;
+            font-family: 'Alegreya', serif;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .description {
+            font-size:20px;
+            color: #D9D8E4;
+            text-align:justify;
+        }
+
+        #learn {
+            margin-top: 2vw;
+            margin-left: 5vw;
+            border-width: 0;
+            border-radius: 25px;
+            color: white;
+            background-image: linear-gradient(to right, #B8054D, #FF985D);
+            padding-top: 3%;
+            padding-bottom: 3%;
+            width: 75%;
+            font-size:20px;
+        }
+
+                        /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 3s;
+                animation-name: fade;
+                animation-duration: 3s;
+                transition-timing-function: ease-in-out;
+            }
+
+            .fastfade {
+                -webkit-animation-name: fastfade;
+                -webkit-animation-duration: 1s;
+                animation-name: fastfade;
+                animation-duration: 1s;
+                transition-timing-function: ease-in-out;
+            }
+            
+            @-webkit-keyframes fade {
+                from {opacity: 0} 
+                to {opacity: 1}
+            }
+            
+            @keyframes fade {
+                from {opacity: 0} 
+                to {opacity: 1}
+            }
+            
+            @-webkit-keyframes fastfade {
+                from {opacity: 0.4} 
+                to {opacity: 1}
+            }
+            
+            @keyframes fastfade {
+                from {opacity: 0.4} 
+                to {opacity: 1}
+            }
+
+    .initial {
+        padding-bottom: 10%;
+    }
+
+    /* Accounting Services */
+    .title-services {
+        background-size: 100%;
+        background-color: #2B4381;
+        height: 50vh;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        color: #a7d8f6;
+    }
+
+        .acct-services {
+            font-size: 50px;
+            padding-left: 20%;
+            padding-right: 20%;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .acct-services-desc {
+            font-size: 20px;
+            padding-left: 18%;
+            padding-right: 18%;
+            text-align: center;
+            font-family: 'Nunito Sans', sans-serif;
+        }
