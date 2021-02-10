@@ -41,7 +41,8 @@ body{
             .nav-link {
                 padding-top: 0.1vw;
                 padding-bottom: 0.1vw;
-                font-size: 20px;
+                font-size: 1.4vw;
+                /* font-size: 20px; */
                 padding-right: 5vw;
                 font-family: 'Nunito Sans', sans-serif;
                 color: #2B4381;
@@ -50,7 +51,7 @@ body{
 
             #about:hover, #services:hover, #contact:hover {
                 color: blue;
-                font-size: 25px;
+                font-size: 1.5vw;
                 transition: all 0.4s ease;
                 -webkit-transition: all 0.4 ease;
                 cursor:pointer;
@@ -63,7 +64,7 @@ body{
             .search {
                 border-radius: 15px;
                 margin-right: 5vw;
-                height: 25px;
+                height: 1.5vw;
                 background: rgb(220, 237, 247);
             }
 
@@ -72,7 +73,7 @@ body{
     .ads {
         height: 90vh;
         width: 100%;
-        object-fit: cover;
+        object-fit: fill;
     }
 
     .firm {
@@ -169,7 +170,7 @@ body{
     .title-services {
         background-size: 100%;
         background-color: #2B4381;
-        height: 50vh;
+        height: 70vh;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -178,7 +179,8 @@ body{
     }
 
         .acct-services {
-            font-size: 50px;
+            /* font-size: 50px; */
+            font-size: 3.2vw;
             padding-left: 20%;
             padding-right: 20%;
             text-align: center;
@@ -186,7 +188,8 @@ body{
         }
 
         .acct-services-desc {
-            font-size: 20px;
+            /* font-size: 20px; */
+            font-size: 1.3vw;
             padding-left: 18%;
             padding-right: 18%;
             text-align: center;
