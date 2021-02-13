@@ -11,8 +11,54 @@ function myFunction() {
   }
 }
 
-// Plays Video
-document.getElementById('video').play()
+//Disable Right Click on Video
+document.querySelector("video").addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+});
+
+
+// Toggle Mute Button
+var vid = document.getElementById("video");
+var offsound = document.getElementById("mute");
+var onsound = document.getElementById("unmute"); 
+
+function enableMute() {
+  
+    if (vid.muted == true) {
+      vid.muted = false;
+      offsound.classList.toggle("hidden")
+      onsound.classList.toggle("block")
+    } 
+    else {
+      vid.muted = true;
+      offsound.classList.toggle("hidden")
+      onsound.classList.toggle("block")
+    } 
+  
+}
+
+
+
+
+
+// Appear onscroll animation
+
+  // const appear = querySelectorAll('.animate');
+  // const appearOptions = {};
+  // const appearOnScroll = new IntersectionObserver (function(entries,appearOnScroll) {
+  //   entries.forEach(entry => {
+  //     if (!entry.isIntersecting) {
+  //       return;
+  //     } else {
+  //       entry.target.classList.add("show");
+  //       appearOnScroll.unobserve(entry.target);
+  //     }
+  //     })
+  // }, appearOptions)
+
+  // appear.forEach(appearitem => {
+  //   appearOnScroll.observe(appearitem);
+  // })
 
 
 // Pics and Text Slideshow on first page

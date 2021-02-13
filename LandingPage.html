@@ -10,24 +10,126 @@
     <body>
         <header id="navheader" class="head fastfade">
             <div class="h-logo">
-                <img id="header-img" src="assets/MisaLogo.svg">
-                <!-- <div class="firstword">ACCOUNTING FIRM</div> -->
+                <a href="LandingPage.html">
+                    <img id="header-img" src="assets/MisaLogo.svg">
+                </a>
             </div>
             <nav id="nav-bar" class="navbar">
-                <a class="nav-link" id="services">What we offer</a>
-                <a class="nav-link" id="about">Who we are</a>
-                <a class="nav-link" id="contact">Contact Us</a>
-                <input id="searchbar" class ="search" type="text" placeholder="Search..">
+                <a class="nav-link" id="services" href="#offerservices">What we offer</a>
+                <a class="nav-link" id="about" href="#titleservices">Who we are</a>
+                <a class="nav-link" id="contact" href="#footer">Contact Us</a>
+                <button id="request">Request Proposal</button>
+                <!-- <input id="searchbar" class ="search" type="text" placeholder="Search . . ."> -->
             </nav>
         </header>
         <main>
-            <video id="video" class="ads" controls autoplay muted loop>
-                <source src="assets/AccountingAds.mp4" type="video/mp4">
-            </video>
+            <div class="vidandmute">
+                <video id="video" class="ads" autoplay muted loop>
+                    <source src="assets/AccountingAds.mp4" type="video/mp4">
+                </video>
+                <div class="btn">
+                    <img onclick="enableMute()" class="sound off" id="mute" src="assets/MuteBtn.png">
+                    <img onclick="enableMute()" class="sound on" id="unmute" src="assets/SoundBtn.png">
+                </div>
+            </div>
+            <div class="title-services" id="titleservices">
+                <h1 class="acct-services animate">
+                    We help your business make sound financial decisions.
+                </h1>
+                <p class="acct-services-desc animate"> We operate as an extension of your internal staff, performing a variety of accounting and financial services and offering maximum flexibility by allowing you to rely on us for your business needs.</p>
+                <p class="acct-services-desc animate">Misa Incorporated was established in 2020 and has since been known for its passion and commitment for businesses, big and small, to succeed by performing critical accounting functions essential for growth.</p>
+            </div>
+            <h1 class="title-offer animate" id="offerservices">
+                What we offer
+            </h1>
+            <div class="offer-services">
+                <div class="service-cards animate" id="AS">
+                    <img class="img-services" src="assets/AS.png">
+                    <h2>ACCOUNTING SERVICES</h2>
+                    <ul>
+                        <li>Bookkeeping Solutions</li>
+                        <li>Tax Filing (BIR)</li>
+                        <li>Financial Analysis</li>
+                        <li>Financial Consulting</li>
+                    </ul>
+                </div>
+                <div class="service-cards animate" id="BR">
+                    <img class="img-services" src="assets/BR.png">
+                    <h2>BUSINESS REGISTRATIONS</h2>
+                    <ul>
+                        <li>Sole Proprietorship</li>
+                        <li>Partnership</li>
+                        <li>Corporation</li>
+                        <li>Cooperative</li>
+                    </ul>
+                </div>
+                <div class="service-cards animate" id="LC">
+                    <img class="img-services" src="assets/LC.png">
+                    <h2>LICENSES & CERTIFICATIONS</h2>
+                    <ul>
+                        <li>Board of Investments (BOI)</li>
+                        <li>Philippine Drug Enforcement Agency (PDEA)</li>
+                        <li>Importation Permit (Importer)</li>
+                        <li>Philippine Exporters Confederation Inc. (Exporter)</li>
+                    </ul>
+                </div>
+                <div class="service-cards animate" id="PS">
+                    <img class="img-services" src="assets/PS.png">
+                    <h2>PAYROLL SERVICES</h2>
+                    <ul>
+                        <li>Time and Attendance</li>
+                        <li>Payroll Computation</li>
+                        <li>Payroll Reports</li>
+                        <li>Compensation and Benefits</li>
+                    </ul>
+                </div>
+            </div>
             
+        </main>
+        <footer id="footer">
+            <div class="footer-column">
+                <div class="left-column">
+                    <h1 class="inquiry">Inquire about our services</h1>
+                    <form id="inquire">
+                        <div class="info">
+                                <input type="text" name="name" id="name" placeholder="Enter your name here" required>
+                                <label for="name" id="name-label">Name</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+                                <label for="email" id="email-label">Email</label>
+                                <input type="number" name="mobile" id="number" min=9070000000 max=9809999999 placeholder="Enter your number here">
+                                <label for="number" id="number-label">Mobile number</label>
+                                <textarea name="comment" id="comment" cols="40" rows="5" placeholder="What can we help you with?"></textarea>
+                                <a id="inquiry-label">Inquiry</a>
+                        </div>
+                        <button id="submit">Send your inquiry!</button>
+                    </form>
+                </div>
+                <div class="right-column">
+                    <h1 class="contact-title">Contact us to discuss your needs</h1>
+                    <div class="contact-details">
+                    <img class="contact-icons-phone" src="assets/phonewhite.png">
+                    <p class="contact-text">+639XX-XXXXXXX</p>
+                    </div>
+                    <div class="contact-details">
+                    <img class="contact-icons" src="assets/mailwhite.png">
+                    <p class="contact-text">inquiry@misainc.com</p>
+                    </div>
+                    <div class="contact-details">
+                    <img class="contact-icons" src="assets/locwhite.png">
+                    <p class="contact-text">Nuvali, Sta. Rosa Laguna</p>
+                    </div>
+                    <button id="request2">Request Proposal</button>
+                </div>
+            </div>
             
-            
-            <!-- <div class="initial">
+        </footer>
+    </body>
+    <script src="LandingPage.js"></script>
+</html>
+
+
+
+<!-- <div class="initial">
                 <div class="text-block">
                     <div>
                         <span class="titletext fade">ACCOUNTING SERVICES</span>
@@ -45,14 +147,3 @@
                         <img class="firm fade" src="assets/A1.png">
                 </div>
             </div> -->
-            <div class="title-services">
-                <div class="acct-services">
-                    We help your business make sound financial decisions.
-                </div>
-                <p class="acct-services-desc"> We operate as an extension of your internal staff, performing a variety of financial and accounting services and offering you the maximum flexibility by allowing you to rely on us with your business needs.</p>
-                <p class="acct-services-desc">Misa Incorporated was established in 2020 and has since been known for its passion and commitment for businesses, big and small, to succeed by performing critical accounting functions essential for growth.</p>
-            </div>
-        </main>
-    </body>
-    <script src="LandingPage.js"></script>
-</html>
