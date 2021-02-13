@@ -44,7 +44,7 @@ body{
             }
 
         /* Navigation Bar */
-        nav {
+        .navbar {
             display: flex;
             align-items: center;
             }
@@ -92,13 +92,8 @@ body{
                 cursor:pointer;
             }
 
-            .search {
-                border-radius: 15px;
-                margin-right: 5vw;
-                height: 1.5vw;
-                background: rgb(220, 237, 247);
-                font-family: 'Nunito Sans', sans-serif;
-                font-weight:800;
+            .navbar .icon {
+                display: none;
             }
     
 /* Fading Effect */
@@ -407,7 +402,7 @@ body{
 
 /* Video height */
     .vidandmute {
-        height: 43vw;
+        height: 80vw;
     }
 
     .btn {
@@ -432,6 +427,7 @@ body{
 
     .title-offer {
         font-size: 4.2vw;
+        margin-left: 0;
     }
 
     .offer-services {
@@ -444,14 +440,126 @@ body{
         margin: 5%;
     }
 
+    .inquiry {
+        font-size: 4.1vw;
+    }
+
+    .right-column {
+        margin-right: 12vw;
+    }
+
+    .info {
+        margin-left: 5vw;
+    }
 
 }
 
 
+/* Ipad tablet and landscape phones */
+
+/* @media screen and (max-width: 812px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 812px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  } */
+
+  @media screen and (max-width: 812px) {
+    .vidandmute {
+        height:85vh;
+    }
+
+    .title-offer {
+        text-align: center;
+        font-size: 4.2vw;
+    }
+
+    .footer-column {
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .left-column {
+            margin-left: 5vw;
+            margin-right: 0;
+        }
+
+            .info {
+                margin-left: 5vw;
+                width: 85%;
+            }
+
+            #submit {
+                margin-left: 17vw;
+                padding-left: 2vw;
+                padding-right: 2vw;
+            }
+
+        .right-column {
+            margin-left: 0;
+            margin-right: 0;
+        }
+            
+  }
+
+  @media screen and (max-width: 768px) {
+    .vidandmute {
+        height:85vw;
+    }
+  }
 
 
+  @media screen and (max-width: 414px) {
+    .vidandmute {
+        height:60vh;
+    }
 
+    .title-services {
+        background-size: 100%;
+        height: auto;
+    }
 
+        .acct-services {
+            font-size: 3.2vh;
+        }
+
+        .acct-services-desc {
+            font-size: 1.3vh;
+        }
+
+    .title-offer {
+        font-size: 4.2vh;
+    }
+
+    .left-column {
+        margin-left: 0;
+    }
+
+        .inquiry {
+            font-size: 3vh;
+            text-align: center;
+        }
+
+            #submit {
+                margin-left: 28vw;
+            }
+
+  }
 
 
 /* Animation of Who are we and What we offer */
