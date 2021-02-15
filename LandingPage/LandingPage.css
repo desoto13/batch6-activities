@@ -317,6 +317,7 @@ body{
 
         .inquiry {
             font-size: 50px;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .info {
@@ -445,8 +446,9 @@ body{
 
 
 @media only screen and (max-width: 1365px) {
-    .service-cards {
-        margin: 40px;
+    .offer-services {
+        margin: 30px;
+        margin-bottom: 60px;
 }
 
 
@@ -622,13 +624,13 @@ body{
     }
 
     .acct-services {
-        font-size: 30px;
+        font-size: 25px;
         padding-left: 5%;
         padding-right: 5%;
     }
 
     .acct-services-desc {
-        font-size: 15px;
+        font-size: 12.5px;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -637,7 +639,13 @@ body{
         font-size: 40px;
     }
 
+    .offer-services {
+        margin: 0;
+        
+    }
+
     .service-cards {
+        margin:0;
         margin-bottom: 50px;
     }   
 
@@ -667,6 +675,40 @@ body{
     .contact-details {
         margin-left: 0;
     }
+
+}
+
+@media screen and (max-width: 384px) {
+
+    .offer-services {
+        margin: 0;
+        
+    }
+
+    .title-offer {
+        font-size:30px;
+    }
+
+    .service-cards {
+        margin:0;
+        margin-bottom: 50px;
+        width:160px;
+        padding-top: 20px;
+        height:220px;
+    }
+
+            .img-services {
+                height: 50px;
+                width: 50px;
+            }
+
+            h2 {
+                font-size: 15px;
+            }
+
+            ul {
+                font-size: 8.5px;
+            }
 
 }
     
