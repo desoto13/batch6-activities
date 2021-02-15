@@ -44,8 +44,10 @@ body{
     }
 
         .icons {
-            height :50px;
-            width: 50px;
+            height :6vw;
+            width: 6vw;
+            padding-top: 0.5vw;
+            padding-bottom: 0.5vw;;
         }
 
         .h-logo {
@@ -447,8 +449,17 @@ body{
 
 @media only screen and (max-width: 1365px) {
     .offer-services {
-        margin: 30px;
+        margin: 0;
         margin-bottom: 60px;
+    }
+
+    /* .service-cards {
+        width:187.5px;
+        padding-top: 25px;
+        height:250px;
+        margin: 0;
+    } */
+
 }
 
 
@@ -656,8 +667,8 @@ body{
     }
 
     .contact-title {
-        font-size: 20px;
-        margin-bottom: 50px;
+        font-size: 25px;
+        margin: 50px;
         padding-right: 0;
         text-align: center;
     }
