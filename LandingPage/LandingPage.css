@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700;1,800&family=Playfair+Display:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Nunito+Sans&display=swap');
-/* @import url('SupportPage/LandingPageTablet.css') */
+
 
 html {
     scroll-behavior: smooth;
@@ -44,8 +44,8 @@ body{
     }
 
         .icons {
-            height :6vw;
-            width: 6vw;
+            height :5vh;
+            width: 5vh;
             padding-top: 0.5vw;
             padding-bottom: 0.5vw;;
         }
@@ -452,14 +452,6 @@ body{
         margin: 0;
         margin-bottom: 60px;
     }
-
-    /* .service-cards {
-        width:187.5px;
-        padding-top: 25px;
-        height:250px;
-        margin: 0;
-    } */
-
 }
 
 
@@ -542,9 +534,6 @@ body{
         width:100%;
     }
 
-    /* .icons {
-        border-left: solid 2px #2B4381;
-    } */
 }
 
   @media screen and (max-width: 812px) {
@@ -581,13 +570,15 @@ body{
             flex-wrap: wrap;
             overflow-x: hidden;
             justify-content: space-around;
+            margin-left: 40px;
+            margin-right: 40px;
         }
     
             .service-cards {
                 width:187.5px;
                 padding-top: 25px;
                 height:250px;
-                margin: 20px;
+                margin: 30px;
                 
             }
     
@@ -629,10 +620,6 @@ body{
         }
 
 @media screen and (max-width: 425px) {
-    .btn {
-        top:90%;
-        left:88%
-    }
 
     .acct-services {
         font-size: 25px;
@@ -722,153 +709,3 @@ body{
             }
 
 }
-    
-    /* .contact-icons-phone {
-        height: 50px;
-        width: 34px;
-    }
-
-    .contact-icons-email {
-        height: 50px;
-        width: 50px;
-    }
-
-    .contact-icons-loc {
-        height: 50px;
-        width: 50px;
-    }
-
-    .contact-text {
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 19px;
-    } */
-
-}
-
-
-
-
-/* Animation of Who are we and What we offer */
-    /* .animate {
-        opacity:0;
-        transition: opacity 250ms ease-in;
-    }
-
-    .animate.show {
-        opacity:1;
-    } */
-
-        
-        
-
-
-
-
-
-        /* .firm {
-        height: 660px;
-        width: 64.7%;
-    } */
-
-    /* .text-block {
-    font-family: 'Montserrat', sans-serif;
-    position: absolute;
-    top: 25%;
-    right: 5%;
-    margin-left: 70vw;
-    width: 30vw;
-    }
-
-        .titletext {
-            display: none;
-            font-size: 50px;
-            color: #2B4381;
-            text-align: center;
-        }
-
-        .company {
-            color: #C59849;
-            font-size: 30px;
-            font-family: 'Alegreya', serif;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .description {
-            font-size:20px;
-            color: #D9D8E4;
-            text-align:justify;
-        }
-
-        #learn {
-            margin-top: 2vw;
-            margin-left: 5vw;
-            border-width: 0;
-            border-radius: 25px;
-            color: white;
-            background-image: linear-gradient(to right, #B8054D, #FF985D);
-            padding-top: 3%;
-            padding-bottom: 3%;
-            width: 75%;
-            font-size:20px;
-        }
-
-            .fade {
-                -webkit-animation-name: fade;
-                -webkit-animation-duration: 3s;
-                animation-name: fade;
-                animation-duration: 3s;
-                transition-timing-function: ease-in-out;
-            }
-
-            .fastfade {
-                -webkit-animation-name: fastfade;
-                -webkit-animation-duration: 1s;
-                animation-name: fastfade;
-                animation-duration: 1s;
-                transition-timing-function: ease-in-out;
-            }
-            
-            @-webkit-keyframes fade {
-                from {opacity: 0} 
-                to {opacity: 1}
-            }
-            
-            @keyframes fade {
-                from {opacity: 0} 
-                to {opacity: 1}
-            }
-            
-            @-webkit-keyframes fastfade {
-                from {opacity: 0.4} 
-                to {opacity: 1}
-            }
-            
-            @keyframes fastfade {
-                from {opacity: 0.4} 
-                to {opacity: 1}
-            }
-
-    .initial {
-        padding-bottom: 10%;
-    } */
-
-     /* Request Proposal Button */
-    /* .proposal {
-        width: 15%;
-        margin-bottom: 2vw;
-        border-radius: 25px;
-        color:#D9D8E4;
-        font-family: 'Nunito Sans', sans-serif;
-        border: 2px solid #2B4381;
-        font-size: large;
-        padding-top: 0.5vw;
-        padding-bottom: 0.5vw;
-        align-self: center;
-        background-color: #2B4381;
-    }
-
-    .proposal:hover {
-        background-color: #D9D8E4;
-        cursor:pointer;
-        color: #2B4381;
-    } */
