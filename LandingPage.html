@@ -6,23 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="LandingPage.css">
         <link rel="icon" href="assets/MisaLogo.svg">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header id="navheader" class="head fastfade">
-            <div class="h-logo">
-                <a href="LandingPage.html">
-                    <img id="header-img" src="assets/MisaLogo.svg">
-                </a>
+            <div class="bigscreen">
+                <div class="h-logo">
+                    <a href="LandingPage.html">
+                        <img id="header-img" src="assets/MisaLogo.svg">
+                    </a>
+                </div>
+                <nav id="nav-bar" class="nav-link">
+                    <a id="services" href="LandingPage.html#offerservices">What we offer</a>
+                    <a id="about" href="LandingPage.html#titleservices">Who we are</a>
+                    <a id="contact" href="#footer">Contact Us</a>
+                    <a id="request">Request Proposal</a>
+                </nav>
             </div>
-            <nav id="nav-bar" class="navbar">
-                <a class="nav-link" id="services" href="#offerservices">What we offer</a>
-                <a class="nav-link" id="about" href="#titleservices">Who we are</a>
-                <a class="nav-link" id="contact" href="#footer">Contact Us</a>
-                <button id="request">Request Proposal</button>
-                <a href="javascript:void(0);" class="icon" onclick="Burger()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </nav>
+            <div class="smallscreen">
+                <img class="icons" src="assets2/homeicon.png">
+                <img class="icons" src="">
+                <img class="icons" src="">
+                <img class="icons" src="">
+            </div>
         </header>
         <main>
             <div class="vidandmute">
@@ -107,18 +113,20 @@
                     </form>
                 </div>
                 <div class="right-column">
-                    <h1 class="contact-title">Contact us to discuss your needs</h1>
-                    <div class="contact-details">
-                        <img class="contact-icons-phone" src="assets/phonewhite.png">
-                        <p class="contact-text">+639XX-XXXXXXX</p>
-                    </div>
-                    <div class="contact-details">
-                        <img class="contact-icons" src="assets/mailwhite.png">
-                        <p class="contact-text">inquiry@misainc.com</p>
-                    </div>
-                    <div class="contact-details">
-                        <img class="contact-icons" src="assets/locwhite.png">
-                        <p class="contact-text">Nuvali, Sta. Rosa Laguna</p>
+                    <h1 class="contact-title">CONTACT US TO DISCUSS YOUR NEEDS</h1>
+                    <div class="contact">
+                        <div class="contact-details">
+                            <img class="contact-icons-phone" src="assets/phonewhite.png">
+                            <p class="contact-text">+639XX-XXXXXXX</p>
+                        </div>
+                        <div class="contact-details">
+                            <img class="contact-icons-email" src="assets/mailwhite.png">
+                            <p class="contact-text">inquiry@misainc.com</p>
+                        </div>
+                        <div class="contact-details">
+                            <img class="contact-icons-loc" src="assets/locwhite.png">
+                            <p class="contact-text">Nuvali, Sta. Rosa Laguna</p>
+                        </div>
                     </div>
                     <button id="request2">Request Proposal</button>
                 </div>
