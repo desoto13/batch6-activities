@@ -94,6 +94,7 @@ body{
                 cursor:pointer;
                 font-weight:800;
                 font-family: 'Nunito Sans', sans-serif;
+                text-decoration: none;
             }
 
             #about:hover, #services:hover, #contact:hover {
@@ -256,6 +257,10 @@ body{
             
         }
 
+        .cards {
+            text-decoration: none;
+        }
+
             .img-services {
                 height: 100px;
                 width: 100px;
@@ -267,12 +272,14 @@ body{
                 font-family: 'Montserrat', sans-serif;
                 text-align: center;
                 font-size: 30px;
+                color: #D9D8E4;
             }
 
             ul {
                 font-family: 'Nunito Sans', sans-serif;
                 font-size: 17px;
                 align-self: flex-start;
+                color: #D9D8E4;
             }
 
             .service-cards:hover {

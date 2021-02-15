@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700;1,800&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Nunito+Sans&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-image: url(https://media.istockphoto.com/vectors/horizontal-vector-illustration-of-an-empty-white-grey-shade-grunge-vector-id1167128260?k=6&m=1167128260&s=612x612&w=0&h=zEBVXvRNK8nOC6OiJGxzBCCiQQt3vEeq0-32LNIAtYk=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Header of Landing Page */
+
+.sticky {
+    position: fixed;
+    top: 0;
+}
+
+.head {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9BE1E7;
+    width:100%;
+    z-index: 4;
+}
+
+.bigscreen {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:100%;
+    z-index: 4;
+
+}
+
+.smallscreen {
+    display: none;
+}
+
+    .icons {
+        height :5vh;
+        width: 5vh;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;;
+    }
+
+    .h-logo {
+        display:flex;
+        align-items: center;
+        
+    }
+
+        #header-img {
+            padding-top: 0.1vw;
+            padding-bottom: 0.1vw;
+            padding-left: 7.5vw;
+        }
+
+    /* Navigation Bar */
+    
+        .nav-link {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            font-size: 22px;
+            font-family: 'Nunito Sans', sans-serif;
+            color: #2B4381;
+            font-weight:800;
+            overflow: hidden;
+        }
+
+        #services, #about, #contact {
+            margin-right: 5vw;
+            text-decoration: none;
+            color: #2B4381;
+        }
+
+        #request {
+            background-color: #2B4381;
+            font-size: 22px;
+            border-radius: 25px;
+            margin-right: 5vw;
+            padding:0.5vw;
+            border: 0;
+            color: #9BE1E7;
+            cursor:pointer;
+            font-weight:800;
+            font-family: 'Nunito Sans', sans-serif;
+            text-decoration: none;
+        }
+
+        #about:hover, #services:hover, #contact:hover {
+            text-decoration: underline;
+            transition: all 0.4s ease;
+            -webkit-transition: all 0.4 ease;
+            cursor:pointer;
+        }
+
+        #request:hover {
+            background-color: #9BE1E7;
+            border: 2px solid #2B4381;
+            color: #2B4381;
+            cursor:pointer;
+        }
+
+        #header-img:hover {
+            cursor:pointer;
+        }
+
+
+/* Fading Effect */
+@-webkit-keyframes fastfade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+        
+@keyframes fastfade {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+}
+
+.fastfade {
+    -webkit-animation-name: fastfade;
+    -webkit-animation-duration: 1s;
+    animation-name: fastfade;
+    animation-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 60px;
+    color: #2B4381;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 60px;
+    color: #2B4381;
+}
+
+#addreq {
+    resize: none;
+    background-color: ;
+}

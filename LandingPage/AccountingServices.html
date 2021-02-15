@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MISA Inc.</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Services.css">
+        <link rel="icon" href="assets2/MisaLogo.svg">
+    </head>
+    <body>
+        <header id="navheader" class="head fastfade">
+            <div class="bigscreen">
+                <div class="h-logo">
+                    <a href="LandingPage.html">
+                        <img id="header-img" src="assets2/MisaLogo.svg">
+                    </a>
+                </div>
+                <nav id="nav-bar" class="nav-link">
+                    <a id="services" href="LandingPage.html#offerservices">What we offer</a>
+                    <a id="about" href="LandingPage.html#titleservices">Who we are</a>
+                    <a id="contact" href="#footer">Contact Us</a>
+                    <a id="request" href="Proposal.html">Request Proposal</a>
+                </nav>
+            </div>
+            <div class="smallscreen">
+                <a href="LandingPage.html"><img class="icons" src="assets2/homeicon.png"></a>
+                <a href="LandingPage.html#offerservices"><img class="icons" src="assets2/serviceicon.png"></a>
+                <a href="#footer"><img class="icons" src="assets2/inquiryicon.png"></a>
+                <img class="icons" src="assets2/proposalicon.png">
+            </div>
+        </header>
+        <main>
+            <h1 class="headtitle">ACCOUNTING SERVICES</h1>
+            <dl>
+                <dt>Bookkeeping Solutions</dt>
+                    <dd>Bookkeeping is the most basic of all accounting functions. Bookkeeping involves maintaining accurate and updated records of all of your company’s financial activity. This includes bank records, tax filings, payroll records, purchase and sale records, and regulatory filings. These records are essential to regulatory compliance. Proper bookkeeping makes other accounting functions, such as audits, payroll, and tax preparation, much simpler and less time consuming.</dd>
+                <dt>Tax Filing (BIR)</dt>
+                    <dd>Commercial tax preparation can be extremely complex. Records and submissions must be prepared carefully in order to minimize your risk of unforeseen tax liabilities, fees, or audits. Our team will work with you to prepare complete and accurate corporate tax filings on an annual basis.</dd>
+                <dt>Financial Analysis</dt>
+                    <dd>It is wise to conduct periodic review and analysis of your company’s financial performance. These reviews are typically called audits, and are an important part of regulatory compliance and shareholder disclosure. Additionally, financial analysis can provide valuable insight into your company’s financial health which can help you make sound decisions for the future.</dd>
+                <dt>Financial Consulting</dt>
+                    <dd>Our financial consulting services are designed to provide you with expert analysis and advice regarding your company’s strategic decisions. As you consider exploring business opportunities, investments, and partnerships, it is important to understand the short, medium, and long-term ramifications of your decisions. Our financial consulting services make it easy to understand the financial impact your decisions will have on your company’s future.</dd>
+            </dl>
+        </main>
+        <footer id="footer">
+            <div class="footer-column">
+                <div class="left-column">
+                    <h1 class="inquiry">Inquire about our services</h1>
+                    <form id="inquire" action="ThankYou.html">
+                        <div class="info">
+                                <input type="text" name="name" id="name" placeholder="Enter your name here" required>
+                                <label for="name" id="name-label">Name</label>
+                                <input type="email" name="email" id="email" placeholder="Enter your email here" required>
+                                <label for="email" id="email-label">Email</label>
+                                <input type="number" name="mobile" id="number" min=9070000000 max=9809999999 placeholder="Enter your number here">
+                                <label for="number" id="number-label">Mobile number</label>
+                                <textarea name="comment" id="comment" cols="40" rows="5" placeholder="What can we help you with?"></textarea>
+                                <a id="inquiry-label">Inquiry</a>
+                        </div>
+                        <button id="submit">Send your inquiry!</button>
+                    </form>
+                </div>
+                <div class="right-column">
+                    <h1 class="contact-title">CONTACT US TO DISCUSS YOUR NEEDS</h1>
+                    <div class="contact">
+                        <div class="contact-details">
+                            <img class="contact-icons-phone" src="assets2/phonewhite.png">
+                            <p class="contact-text">+639XX-XXXXXXX</p>
+                        </div>
+                        <div class="contact-details">
+                            <img class="contact-icons-email" src="assets2/mailwhite.png">
+                            <p class="contact-text">inquiry@misainc.com</p>
+                        </div>
+                        <div class="contact-details">
+                            <img class="contact-icons-loc" src="assets2/locwhite.png">
+                            <p class="contact-text">Nuvali, Sta. Rosa Laguna</p>
+                        </div>
+                    </div>
+                    <a href="Proposal.html"><button id="request2">Request Proposal</button></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script src="Proposal.js"></script>
+</html>
+
