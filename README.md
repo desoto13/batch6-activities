@@ -39,4 +39,9 @@ This activity requires to make a chessboard using flex in which all 64 squares s
 
 This activity requires to make a chessboard using flex in which all 64 squares should always be visible and should always be squares. This is a training exercise in using grid.
 
+<br>
+
+[LANDING PAGE](https://desoto13.github.io/batch6-activities/LandingPage/LandingPage.html)
+
+This project requires us to create a sample product landing page. This is a training exercise for media queries and also a project that lets us use anything that we learned during the course of HTML and CSS.
 
