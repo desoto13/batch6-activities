@@ -181,10 +181,6 @@ function endGame (champ, finale) {
 function lenMove () {
     var k = moves.length-1;
     len.push(k);
-    
-    if (len[0] === 0) {
-        
-    }
 }
 
 // length of moves
