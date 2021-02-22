@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #347FC4;
+}
+
+    h1 {
+        font-size: 40px;
+    }
+
+    table, td {
+        table-layout: fixed;
+        width: 150px;
+        height: 150px;
+        border: 3px solid black;
+        place-content: center center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
+        font-size: 120px;
+        text-align: center;
+        border-collapse: collapse;
+        background-color: white;
+    }
+
+    table {
+        display:none;
+    }
+
+    #choices {
+        height: 450px;
+        width: 450px;
+        border: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: silver;
+    }
+
+        h2 {
+            margin: 50px 50px;
+            border-radius: 25px;
+            background-color: #53917E;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        h2:hover {
+            background-color: black;
+            cursor: pointer;
+            color:white;
+        }
+
+    #state {
+        display: flex;
+        position:absolute;
+        top: 550px;
+    }
+
+    #prev, #reset, #next {
+        display: none;
+    }
+
+    td:hover {
+        cursor: pointer;
+    }
