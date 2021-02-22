@@ -9,9 +9,10 @@ body {
 }
 
     h1 {
-        font-size: 40px;
+        font-size: 50px;
         font-family: 'Merienda One', cursive;
         color: white;
+        margin-bottom: 15px;
     }
 
     table, td {
@@ -68,7 +69,7 @@ body {
     #state {
         display: flex;
         position:absolute;
-        top: 550px;
+        top: 565px;
     }
 
     #prev, #reset, #next {
