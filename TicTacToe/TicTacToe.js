@@ -101,16 +101,16 @@ function winner(board_copy) {
     //Vertical Winner
     for (var j=0; j<3; j++) {
         if (board_copy[0][j] !== EMPTY &&
-            board_copy[0][j] == board_copy[1][j] &&
-            board_copy[1][j] == board_copy[2][j]){
+            board_copy[0][j] === board_copy[1][j] &&
+            board_copy[1][j] === board_copy[2][j]){
                 return board_copy[0][j];
             }
     }
 
     //Diagonal Winner
     if (board_copy[0][0] !== EMPTY &&
-        board_copy[0][0] == board_copy[1][1] &&
-        board_copy[1][1] == board_copy[2][2]){
+        board_copy[0][0] === board_copy[1][1] &&
+        board_copy[1][1] === board_copy[2][2]){
             return board_copy[0][0];
         }
         
