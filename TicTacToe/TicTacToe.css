@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #347FC4;
+    background-image: url(assets/bg.jpg);
 }
 
     h1 {
         font-size: 40px;
+        font-family: 'Merienda One', cursive;
+        color: white;
     }
 
     table, td {
@@ -15,8 +20,7 @@ body {
         height: 150px;
         border: 3px solid black;
         place-content: center center;
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 800;
+        font-family: 'Orbitron', sans-serif;
         font-size: 120px;
         text-align: center;
         border-collapse: collapse;
@@ -29,22 +33,30 @@ body {
 
     #choices {
         height: 450px;
-        width: 450px;
+        width: 350px;
         border: 3px solid black;
+        border-radius: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: silver;
+        background-color: #3B4197;
     }
 
         h2 {
             margin: 50px 50px;
             border-radius: 25px;
-            background-color: #53917E;
+            background-color: #4DA1A9;
             padding: 20px;
             font-size: 30px;
             text-align: center;
+            font-family: 'Orbitron', sans-serif;
+        }
+
+        td:hover {
+            background-color: black;
+            cursor: pointer;
+            color:white;
         }
 
         h2:hover {
