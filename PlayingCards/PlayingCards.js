@@ -5,7 +5,7 @@ var suitSymbols = ["\u2663","\u2660","\u2661","\u2662"];
 var order = [];
 var deckObj = [];
 var deck = [];
-var message = "Input commands\n shuffle(deck) = shuffle  deck\n arrangeBySuits(deck) = sort deck by suits\n arrangeByValues(deck) = ascending sort deck\n arrangeByValuesDown(deck) = descending sort deck\n dealCard(deck) = draw one card\n dealFive(deck) = shuffle and draw 5 cards"
+var message = "Input commands\n shuffle(deck) = shuffle deck\n arrangeBySuits(deck) = sort deck by suits\n arrangeByValues(deck) = ascending sort deck\n arrangeByValuesDown(deck) = descending sort deck\n dealCard(deck) = draw one card\n dealFive(deck) = shuffle and draw 5 cards"
 
 for (i=1; i<14; i++) {
     order.push(i);
@@ -15,56 +15,46 @@ for (v=0; v<values.length; v++) {
     for (s=0; s<suits.length; s++) {
         var cardObj = {Value: values[v], Suit: suits[s], Order: order[v], Card: valueSymbols[v]+suitSymbols[s]};
         deckObj.push(cardObj);
-        deck.push(cardObj.Card)
+        deck.push(cardObj.Card);
     }
 }
 
-console.log(message)
-console.log(deck)
+console.log(message);
+console.log(deck);
+
+//Synchronize Object with Deck
+function synchronizeDeck(deckObj, deckOfCards) {
+    for (var x=0; x<deckObj.length; x++) {
+        deckOfCards[x] = deckObj[x].Card;
+    }
+    return deckOfCards;
+}
 
 //Shuffle Cards
 function shuffle(deckOfCards) {
-    for (var i = 0; i < 1000; i++){
-		var location1 = Math.floor((Math.random() * deckOfCards.length));
-		var location2 = Math.floor((Math.random() * deckOfCards.length));
-        var tmpObj = deckObj[location1];
-        deckObj[location1] = deckObj[location2];
-		deckObj[location2] = tmpObj;
-	}
-    for (var x=0; x<deckObj.length; x++) {
-        deckOfCards[x] = deckObj[x].Card
-    }
-    deck = deckOfCards;
+    deckObj.sort(() => Math.random() - 0.5);
+    deck = synchronizeDeck(deckObj, deckOfCards);
     return deck;
 }
 
 //Sort by Suits
 function arrangeBySuits(deckOfCards) {
     deckObj.sort((a,b) => (a.Suit > b.Suit) ? 1 : (a.Suit === b.Suit) ? 1 : -1);
-    for (var x=0; x<deckObj.length; x++) {
-        deckOfCards[x] = deckObj[x].Card
-    }
-    deck = deckOfCards;
+    deck = synchronizeDeck(deckObj, deckOfCards);
     console.log(deck);
 }
 
 //Sort by Values ascending
 function arrangeByValues(deckOfCards) {
     deckObj.sort((a,b) => (a.Order > b.Order) ? 1 : (a.Order === b.Order) ? 1 : -1);
-    for (var x=0; x<deckObj.length; x++) {
-        deckOfCards[x] = deckObj[x].Card
-    }
-    deck = deckOfCards;
+    deck = synchronizeDeck(deckObj, deckOfCards);
     console.log(deck);
 }
 
 //Sort by Values descending
 function arrangeByValuesDown(deckOfCards) {
     deckObj.sort((a,b) => (a.Order > b.Order) ? -1 : (a.Order === b.Order) ? -1 : 1);
-    for (var x=0; x<deckObj.length; x++) {
-        deckOfCards[x] = deckObj[x].Card
-    }
-    deck = deckOfCards;
+    deck = synchronizeDeck(deckObj, deckOfCards);
     console.log(deck);
 }
 
@@ -113,13 +103,13 @@ function dealFive(deckOfCards) {
     else if (elcount.includes(2) && elcount.includes(3)) {
         pokerHand = "Full House";
     }
-    else if (suitObj.size === 1) {
+    else if (suitObj.size === 1 && orderObj.size === 5) {
         pokerHand = "Flush";
     }
     else if (straight(orderObj) && orderObj.size === 5) {
-        pokerHand = "Straight"
+        pokerHand = "Straight";
     }
-    else if (elcount.includes(1) && elcount.includes(3)) {
+    else if (elcount.reduce((a,b) => a*b) === 3) {
         pokerHand = "Three of a Kind";
     }
     else if (elcount.reduce((a,b) => a*b) === 4) {
@@ -133,9 +123,9 @@ function dealFive(deckOfCards) {
     }
 
     deck = shuffleDeck;
-    console.log(fiveCards)
-    console.log(pokerHand)
-    console.log(deck)
+    console.log(fiveCards);
+    console.log(pokerHand);
+    console.log(deck);
 }
 
 //Compare the 5 cards if they are straight
@@ -144,10 +134,10 @@ function straight(inputSet) {
     var sortArr = prodarr.sort((a,b) => (a > b) ? 1 : (a === b) ? 1 : -1);
     for (i=0;i<sortArr.length-1;i++) {
         if (sortArr[i] === (sortArr[i+1]-1) || JSON.stringify(sortArr)===JSON.stringify([1,10,11,12,13])) {
-            continue
+            continue;
         }
         else {
-            return false
+            return false;
         }            
     }
     return true;
