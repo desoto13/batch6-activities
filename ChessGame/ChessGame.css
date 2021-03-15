@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+body {
+    padding-top: 2vw;
+    display: flex;
+    justify-content: space-around;
+    background-size: cover;
+    background-image: url("https://wallpaperaccess.com/full/1682034.png")
+}
+
+    #dashboard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    span {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 4vw;
+        color: white;
+    }
+
+    #chessboard {
+        height: 40vw;
+        width: 40vw;
+        table-layout: fixed;
+        border-collapse: collapse;
+    }
+
+    .blackcell {
+        background-color: #5f9ea0;
+    }
+
+    .whitecell {
+        background-color: #cffaeb;
+    }
+
+    td {
+        table-layout: fixed;
+        font-size: 4vw;
+        text-align: center;
+        border-collapse: collapse;
+        height: 5vw;
+        width: 5vw;
+        font-family: 'Orbitron', sans-serif;
+    }
+
+    .chesscell:hover {
+        background-color: blue;
+        cursor: grab;
+    }
+    
+    .blue {
+        background-color: #0000ff;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .PromotionTable {
+        background-color: #BF98A0;
+        padding: 3vw
+    }
+    
+    .officers:hover {
+        background-color: blue;
+        cursor: pointer;
+    }
+    
+    #whiteModal, #blackModal {
+        display: none;
+        position:fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #deal {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        border-radius: 25px;
+        width:50%;
+        place-self: center;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.5vw;
+        background-color: black;
+        border-color: white;
+        color: white;
+    }
+
+    #deal:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+
+    #offer {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu {
+        height: 50%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    #blackresigns, #matchdraw, #whiteresigns, #close {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-radius: 25px;
+        width:100%;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.5vw;
+        background-color: black;
+        border-color: white;
+        color: white;
+    }
+    
+    #blackresigns:hover, #matchdraw:hover, #whiteresigns:hover, #close:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+
+    .terminal {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(173, 255, 47, 0.2);
+        z-index: 2;
+        display: none;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        height: 50%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .restart {
+        padding-top: 5%;
+        padding-bottom: 5%;
+        border-radius: 25px;
+        width:50%;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 1.5vw;
+        background-color: black;
+        border-color: white;
+        color: white;
+        margin: 5%;
+    }
+    
+    .restart:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+    
+    .message {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 4vw;
+        text-align: center;
+        color: blue;
+    }
+
