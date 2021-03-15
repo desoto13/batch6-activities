@@ -187,8 +187,14 @@ body {
     
     .message {
         font-family: 'Orbitron', sans-serif;
+        font-weight: 900;
         font-size: 4vw;
         text-align: center;
-        color: blue;
+        color: white;
+        background-color: black;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
 
