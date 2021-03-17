@@ -16,9 +16,10 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    /* background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background-image: url(assets/Pig2.png);
     font-family: Lato;
     font-weight: 300;
     position: relative;
@@ -70,7 +71,10 @@ body {
     margin-bottom: 130px;
 }
 
-.active { background-color: #f7f7f7; }
+.active {
+    background-image: url(assets/Pig1.jpg);
+    background-position: center; 
+}
 .active .player-name { font-weight: 300; }
 
 .active .player-name::after {
@@ -150,7 +154,38 @@ i {
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
 }
 
-.winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }
+.winner { 
+    /* background-color: #f7f7f7; */
+    background-image: url(assets/PigWinner2.jpg);
+    background-size: cover;
+    /* opacity:0.5; */
+}
+.winner .player-name { font-weight: 900; color: #EB4D4D; }
 
 .hidden {display: none;}
+
+.rotate {
+    animation: rotation 0.5s;
+}
+
+.rotateagain {
+    animation: rotationa 0.5s;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes rotationa {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

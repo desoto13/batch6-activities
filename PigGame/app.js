@@ -19,7 +19,8 @@ var activePlayer1 = document.getElementById("Player-1");
 var activePlayer2 = document.getElementById("Player-2");
 var turn = [player1];
 var oink = new Audio("assets/oink.mp4");
-var realoink = new Audio("assets/realoink.mp4")
+var clap = new Audio("assets/clapping.mp4")
+var roll = new Audio("assets/diceRoll.mp4")
 
 var sumCurrent = 0;
 var sumGlobal1 = 0;
@@ -29,7 +30,9 @@ var diceRoll = document.getElementById("roll");
 diceRoll.addEventListener('click', rollDice);
 
 function rollDice() {
-    realoink.play();
+    dice.classList.toggle("rotate");
+    dice.classList.toggle("rotateagain")
+    roll.play();
     if(turn[0] === player1){
         player1Rolls();
     }
@@ -53,7 +56,6 @@ function player1Rolls() {
         activePlayer2.classList.toggle("active");
     }
     current1.innerText = sumCurrent;
-
 }
 
 function player2Rolls() {
@@ -71,7 +73,6 @@ function player2Rolls() {
         activePlayer2.classList.toggle("active");
     }
     current2.innerText = sumCurrent;
-
 }
 
 var holdScore = document.getElementById("hold");
@@ -104,7 +105,8 @@ function Scorehold() {
 
 function checkWinner() {
     if(sumGlobal1 >= 100){
-        alert("Player 1 Wins");
+        clap.play();
+        player1.innerText = "WINNER";
         diceRoll.classList.add("hidden");
         holdScore.classList.add("hidden");
         activePlayer1.classList.toggle("winner");
@@ -112,14 +114,14 @@ function checkWinner() {
         activePlayer2.classList.remove("active");
     }
     else if(sumGlobal2 >= 100) {
-        alert("Player 2 Wins");
+        clap.play();
+        player2.innerText = "WINNER";
         diceRoll.classList.add("hidden");
         holdScore.classList.add("hidden");
         activePlayer2.classList.toggle("winner");
         activePlayer1.classList.remove("active");
         activePlayer2.classList.remove("active");w
     }
-    
 }
 
 var reset = document.getElementById("reset");
