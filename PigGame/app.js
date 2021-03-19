@@ -19,8 +19,8 @@ var activePlayer1 = document.getElementById("Player-1");
 var activePlayer2 = document.getElementById("Player-2");
 var turn = [player1];
 var oink = new Audio("assets/oink.mp4");
-var clap = new Audio("assets/clapping.mp4")
-var roll = new Audio("assets/diceRoll.mp4")
+var clap = new Audio("assets/clapping.mp4");
+var roll = new Audio("assets/diceRoll.mp4");
 
 var sumCurrent = 0;
 var sumGlobal1 = 0;
@@ -120,7 +120,7 @@ function checkWinner() {
         holdScore.classList.add("hidden");
         activePlayer2.classList.toggle("winner");
         activePlayer1.classList.remove("active");
-        activePlayer2.classList.remove("active");w
+        activePlayer2.classList.remove("active");
     }
 }
 

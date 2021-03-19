@@ -165,27 +165,29 @@ i {
 .hidden {display: none;}
 
 .rotate {
-    animation: rotation 0.5s;
+    animation: rotation  0.5s;
 }
 
 .rotateagain {
     animation: rotationa 0.5s;
+    
 }
 
 @keyframes rotation {
     from {
-        transform: rotate(0deg);
+        transform: translateX(-50%) rotate(0deg); 
     }
     to {
-        transform: rotate(359deg);
-    }
+        transform: translateX(-50%) rotate(359deg);
+        
+}
 }
 
 @keyframes rotationa {
     from {
-        transform: rotate(0deg);
+        transform: translateX(-50%) rotate(0deg);
     }
     to {
-        transform: rotate(359deg);
+        transform: translateX(-50%) rotate(359deg);
     }
 }
