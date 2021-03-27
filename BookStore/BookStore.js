@@ -5,6 +5,7 @@ function addBook(t, q, v) {
     book = {title: t, quantity: q, value: v}
     let newbook = JSON.parse(JSON.stringify(book));
     store.inventory.push(newbook);
+    // return store.inventory
 }
 
 function restockBook(t, q) {
@@ -12,9 +13,11 @@ function restockBook(t, q) {
         if(store.inventory[i].title === t){
             store.inventory[i].quantity += q;
             return "Restock Successful";
+            // return store.inventory;
         }  
     }
     return "Not included in the list";
+    // return store.inventory;
 }
 
 function sellBook(t, q) {
@@ -23,12 +26,15 @@ function sellBook(t, q) {
             store.inventory[i].quantity -= q;
             store.earnings += store.inventory[i].value*q;
             return `Successful Transaction`;
+            // return store;
         }
         else if(store.inventory[i].title === t && store.inventory[i].quantity < q){
             return `only ${store.inventory[i].quantity} stocks left`;
+            // return store
         }
     }
-    return `${t} out of stock`;   
+    return `${t} out of stock`;
+    // return store 
 }
 
 function totalEarnings() {
@@ -38,3 +44,5 @@ function totalEarnings() {
 function listInventory() {
     return store.inventory;
 }
+
+module.exports = {store, book, addBook, restockBook, sellBook, totalEarnings,listInventory};
