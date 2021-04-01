@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.form-container {
+    display: none;
+    position:relative;
+    margin-top: 100px;
+    background-color: #F0F6F6;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+.form-title{
+    font-size: 40px;
+    margin:0;
+    background-color: #003365;
+    color: white;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.textbox{
+    height: 40px;
+    margin-top: 10px;
+    border-color: whitesmoke;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#birthday {
+    height: 40px;
+    margin-top: 10px;
+    width: 13%;
+    font-size: 20px;
+}
+
+label{
+    margin-top: 20px;
+}
+
+#save, #prev {
+    margin-top:30px;
+    width: 10%;
+    color: #003365;
+    background-color:whitesmoke;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: 900;
+    border-color: #003365;
+}
+
+#save:hover, #prev:hover{
+    background-color: springgreen;
+    cursor: pointer;
+}
+
+.modal-container {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 255, 255, 0.5);
+    z-index: 11;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.modal {
+    height: 35%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:silver;
+    border-radius: 10px;
+}
+
+.h2-modal {
+    font-size: 35px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.btn-alignment{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.btn-align{
+    padding: 10px;
+    font-size: 20px;
+    width: 30%;
+    border-radius: 10px;
+    font-weight: 900;
+    background-color: whitesmoke;
+}
+
+#execute:hover, #return:hover, #ok:hover, #edit:hover, #transact_client:hover {
+    cursor: pointer;
+    background-color: springgreen;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 900;
+    color:blue;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h3 {
+    font-size:30px;
+    margin-bottom: 0;
+}
+
+.active {
+    display: block;
+}
+
+.update-btns {
+    margin-top: 20px;
+    display:flex;
+    justify-content: start;
+    margin-bottom: 10px;
+}
+
+.update{
+    width: 10%;
+    color: #003365;
+    background-color:whitesmoke;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: 900;
+    border-color: #003365;
+    margin-right: 20px;
+}
+
+#delete {
+    background-color: red;
+    color: pink;
+    border-color: pink;
+}
+
+#delete:hover {
+    background-color: crimson;
+    cursor: pointer;
+}

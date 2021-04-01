@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url("assets/bankpic.jpg");
+    background-size: cover;
+}
+
+    nav{
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: navy;
+        height: 75px;
+        font-family: 'New Tegomin', serif;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+        display: flex;
+        justify-content: space-between;
+        color: oldlace;
+    }
+
+    nav .links{
+        height: 100%;
+        width: 60%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-weight: 900;
+    }
+
+    nav .links li{
+        list-style: none;
+        font-size: 20px;
+    }
+
+    nav .btns{
+        height: 100%;
+        width: 60%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: 900;
+    }
+
+    nav .btns li{
+        list-style: none;
+        font-size: 20px;
+        margin-left: 25px;
+    }
+
+    #searchbutton img{
+        height: 25px;
+        width: 20px;
+    }
+
+    .searchitem{
+        display: flex;
+    }
+
+    #searchtext{
+        height: 30px;
+    }
+
+    #clientlist:hover, #transact:hover, #addclient:hover, #history:hover, #logout:hover{
+        font-style: italic;
+        cursor: pointer;
+        color: gold;
+    }
+
+    #searchbutton:hover{
+        cursor: pointer;
+    }

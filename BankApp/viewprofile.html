@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Central Bank</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="viewprofile.css">
+        <link rel="icon" href="assets/banklogo.png">
+    </head>
+    <body>
+        <nav>
+            <ul class=links>
+                <li id="clientlist">Client List</li>
+                <li id="transact">Do Transaction</li>
+                <li id="addclient">Add Client</li>
+                <li id="history">Transaction History</li>
+            </ul>
+            <ul class="btns">
+                <li class="searchitem" style="display: none;"><input id="searchtext" placeholder="Search..."><button type="button" id="searchbutton"><img src="assets/searchlogo.png"></button></li>
+                <li id="logout">LOG OUT</li>
+            </ul>
+        </nav>
+        <div class="form-container active" id="clientdetails">
+            <h2 class="form-title">Client's Profile</h2>
+            <h3 id="acctnumber"></h3>
+            <h1 id="balance"></h1>
+            <h3 id="name"></h3>
+            <h3 id="disbirthday"></h3>
+            <div class="update-btns">
+                <button class="update" id="edit">EDIT</button>
+                <button class="update" id="transact_client">TRANSACT</button>
+                <button class="update" id="delete">DELETE</button>
+            </div>
+        </div>
+        <div class="form-container" id="clientform">
+            <h2 class="form-title">Client's Profile</h2>
+            <h3 id="acctnumber2"></h3>
+            <h1 id="balance2"></h1>
+            <form method="post" action="javascript:" onsubmit="confirmationBox('Update')">
+                <label>Full Name</label>
+                <input class="textbox" type="text" id="firstname" placeholder="First Name" pattern="^[A-Za-z \s*]+$" required>
+                <input class="textbox" type="text" id="middlename" placeholder="Middle Name" pattern="^[A-Za-z \s*]+$" required>
+                <input class="textbox" type="text" id="lastname" placeholder="Last Name" pattern="^[A-Za-z \s*]+$" required>
+                <label>Birthday</label>
+                <input type="date" id="birthday" required>
+                <div class="form-btns">
+                    <button type="submit" id="save">SAVE</button>
+                    <button type="button" id="prev">BACK</button>
+                </div>
+            </form>
+        </div>
+        <div id="confirmation" class="modal-container">
+            <div class="modal">
+                <h2 class="h2-modal">Are you sure?</h2>
+                <div class="btn-alignment">
+                    <button type="button" id="execute" class="btn-align">YES</button>
+                    <button type="button" id="return" class="btn-align">NO</button>
+                </div>
+            </div>
+        </div>
+        <div id="success" class="modal-container">
+            <div class="modal">
+                <h2 class="h2-modal">Update Successful!</h2>
+                <div class="btn-alignment">
+                    <button type="button" id="ok" class="btn-align">OK</button>
+                </div>
+            </div>
+        </div>
+        <script src="navbar.js"></script>
+        <script src="viewprofile.js"></script>
+    </body>
+</html>

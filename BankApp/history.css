@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.table-container {
+    position:relative;
+    margin: 100px;
+    font-family: "Poppins", sans-serif;
+}
+
+.data-table {
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    table-layout: auto;
+}
+
+.data-table thead tr {
+    background-color: #003365;
+    text-align: left;
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.data-table th, .data-table td {
+    padding: 15px;
+}
+
+.data-table tbody tr {
+    font-size: 12.5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table tbody tr:nth-child(even){
+    background-color: #f3f3f3;
+}
+
+.data-table tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+#datefilter {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Central Bank</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="clientlist.css">
+        <link rel="icon" href="assets/banklogo.png">
+    </head>
+    <body>
+        <nav>
+            <ul class=links>
+                <li id="clientlist">Client List</li>
+                <li id="transact">Do Transaction</li>
+                <li id="addclient">Add Client</li>
+                <li id="history">Transaction History</li>
+            </ul>
+            <ul class="btns">
+                <li class="searchitem"><input id="searchtext" placeholder="Search..."><button type="button" id="searchbutton"><img src="assets/searchlogo.png"></button></li>
+                <li id="logout">LOG OUT</li>
+            </ul>
+        </nav>
+        <div class="table-container">
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Account#</th>
+                        <th>Name</th>
+                        <th>Birthday</th>
+                        <th>Balance</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tablecontent">
+                </tbody>
+            </table>
+            <button type="button" id="addbtn">ADD</button>
+        </div>
+        <script src="navbar.js"></script>
+        <script src="clientlist.js"></script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Central Bank</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="addclient.css">
+        <link rel="icon" href="assets/banklogo.png">
+    </head>
+    <body>
+        <nav>
+            <ul class=links>
+                <li id="clientlist">Client List</li>
+                <li id="transact">Do Transaction</li>
+                <li id="addclient">Add Client</li>
+                <li id="history">Transaction History</li>
+            </ul>
+            <ul class="btns">
+                <li class="searchitem" style="display: none;"><input id="searchtext" placeholder="Search..."><button type="button" id="searchbutton"><img src="assets/searchlogo.png"></button></li>
+                <li id="logout">LOG OUT</li>
+            </ul>
+        </nav>
+        <div class="form-container">
+            <h2 class="form-title">Add New Client</h2>
+            <form method="post" action="javascript:" onsubmit="confirmationBox()">
+                <label>Full Name</label>
+                <input class="textbox" type="text" id="firstname" placeholder="First Name" pattern="^[A-Za-z \s*]+$" required>
+                <input class="textbox" type="text" id="middlename" placeholder="Middle Name" pattern="^[A-Za-z \s*]+$" required>
+                <input class="textbox" type="text" id="lastname" placeholder="Last Name" pattern="^[A-Za-z \s*]+$" required>
+                <label>Birthday</label>
+                <input type="date" id="birthday" required>
+                <label>Initial Deposit Amount</label>
+                <input class="textbox" type="number" id="initdeposit" placeholder="Amount" step="0.01" min="0">
+                <button type="submit" id="add">ADD</button>
+            </form>
+        </div>
+        <div id="confirmation" class="modal-container">
+            <div class="modal">
+                <h2 class="h2-modal">Are you sure?</h2>
+                <div class="btn-alignment">
+                    <button type="button" id="execute" class="btn-align">YES</button>
+                    <button type="button" id="return" class="btn-align">NO</button>
+                </div>
+            </div>
+        </div>
+        <div id="success" class="modal-container">
+            <div class="modal">
+                <h2 class="h2-modal">Account Creation Successful!</h2>
+                <div class="btn-alignment">
+                    <button type="button" id="ok" class="btn-align">OK</button>
+                </div>
+            </div>
+        </div>
+        <script src="navbar.js"></script>
+        <script src="addclient.js"></script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url("assets/bankpic.jpg");
+    background-size: contain;
+}
+
+h1 {
+    font-family: 'New Tegomin', serif;
+    font-size: 50px;
+}
+
+.container {
+    font-family: "Poppins", sans-serif;
+    margin-top: 70px;
+}
+
+.wrapper {
+    height: 604px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    height: 250px;
+    width: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.text {
+    height: 40px;
+    width: 100%;
+    margin: 5px;
+    background-color: #F4F6F6;
+    border: 0px;
+    border-radius: 5px;
+}
+
+button {
+    width: 60%;
+    padding: 7px;
+    margin: 5px;
+    color: white;
+    background-color: #56baed;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #39ace7;
+    cursor: pointer;
+}
