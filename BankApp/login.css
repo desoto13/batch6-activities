@@ -7,7 +7,7 @@ body{
     align-items: center;
     justify-content: space-around;
     background-image: url("assets/bankpic.jpg");
-    background-size: contain;
+    background-size: cover;
 }
 
 h1 {
@@ -33,6 +33,7 @@ h1 {
     padding: 15px;
     height: 250px;
     width: 250px;
+    border: 3.5px solid black;
 }
 
 form {
