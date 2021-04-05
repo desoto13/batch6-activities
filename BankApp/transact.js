@@ -223,7 +223,8 @@ function send(from_user,to_user,amount){
         alert("Insufficient Funds!");
         return;
     } else if(update_transfer_to === undefined ||
-        `${update_transfer_to.FirstName} ${update_transfer_to.LastName}` !== receiver_transfer_full.value.toUpperCase()){
+        `${update_transfer_to.FirstName} ${update_transfer_to.LastName}` !== receiver_transfer_full.value.toUpperCase() ||
+        client_transfer_account.value === receiver_account.value){
         type_of_transaction ="default";
         confirmbox.style.display = "none";
         alert("Wrong Receiver Details!");
