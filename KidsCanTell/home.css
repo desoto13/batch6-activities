@@ -143,19 +143,19 @@ main{
         }
 
         #stories:hover {
-            background-color: rgb(128, 10, 238);
+            background-color: #C8A2C8;
             cursor: pointer;
             color: white;
         }
 
         #animals:hover {
-            background-color: rgb(57, 202, 5);
+            background-color: #99EE99;
             cursor: pointer;
             color: white;
         }
 
         #shapes:hover {
-            background-color: rgb(6, 139, 196);
+            background-color: #6EC5e9;
             cursor: pointer;
             color: white;
         }
