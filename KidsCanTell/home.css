@@ -18,9 +18,9 @@ main{
     }
 
         .title-img-container{
-            height: 90px;
-            width: 370px;
-            margin-left: 10px;
+            height: 50%;
+            width: 24.5%;
+            margin-left: 0.7%;
         }
 
         .body-img{
@@ -50,16 +50,16 @@ main{
         }
 
             h1{
-                font-size: 70px;
+                font-size: 440%;
                 line-height: 1.25;
                 margin-bottom: 0;
                 font-weight: 700;
             }
 
             li{
-                font-size: 15px;
+                font-size: 120%;
                 line-height: 1.5;
-                margin-bottom: 5px;
+                margin-bottom: 1.2%;
             }
 
         .content-img-container{
@@ -93,8 +93,8 @@ main{
         margin-left: 2%;
         margin-right: 2%;
         display:flex;
-        width: 150px;
-        height: 150px;
+        width: 10%;
+        height: 21%;
         border-radius: 50%;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -109,8 +109,8 @@ main{
             #story-img{
                 margin-top: -25%;
                 margin-bottom: 25%;
-                height: 150px;
-                width: 150px;
+                height: 100%;
+                width: 100%;
             }
 
         #animals{
@@ -120,8 +120,8 @@ main{
             #animal-img{
                 margin-top: -25%;
                 margin-bottom: 25%;
-                height: 150px;
-                width: 150px;
+                height: 100%;
+                width: 100%;
             }
 
         #shapes{
@@ -131,14 +131,14 @@ main{
             #shape-img{
                 margin-top: -25%;
                 margin-bottom: 25%;
-                height: 150px;
-                width: 150px;
+                height: 100%;
+                width: 100%;
             }
 
         span {
             margin-top: -30%;
             font-family: 'Epilogue', sans-serif;
-            font-size: 15px;
+            font-size: 95%;
             font-weight: 700;
         }
 
