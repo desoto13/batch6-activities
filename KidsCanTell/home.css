@@ -62,18 +62,14 @@ main{
                 line-height: 1.25;
                 margin-bottom: 0;
                 font-weight: 700;
-                text-align: center;
-            }
-
-            ul{
-                list-style-type: none;
+                text-align: left;
             }
 
             li{
                 font-size: 120%;
                 line-height: 1.5;
                 margin-bottom: 1.2%;
-                text-align: center;
+                text-align: left;
             }
 
         .content-img-container{
