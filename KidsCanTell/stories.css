@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    justify-content: space-around;
+}
+
+textarea {
+    resize: none;
+}
+
+.char-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.char{
+    display:block;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+#stop{
+    display: none;
+}
+
+#tell-story:hover, #stop:hover{
+    cursor: pointer;
+}
