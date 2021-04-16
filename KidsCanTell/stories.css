@@ -24,6 +24,9 @@ textarea {
 
 #stop{
     display: none;
+    height: 20px;
+    width: 40px;
+    align-self: center;
 }
 
 #tell-story:hover, #stop:hover{

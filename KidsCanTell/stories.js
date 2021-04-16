@@ -18,6 +18,9 @@ story_content.value = "I think that I shall never see\
 
 var tell_story = document.getElementById("tell-story");
 var stop_story = document.getElementById("stop");
+var voiceSelect = document.getElementById("voice-select");
+var speedSelect = document.getElementById("rate");
+var dashBoard = document.querySelector(".char-container")
 
 var voices = [];
 var arr_voices = [];
@@ -26,8 +29,18 @@ function ChooseVoices(){
     if (synth.onvoiceschanged !== undefined) {
         synth.onvoiceschanged = ChooseVoices;
     }
+
     voices = synth.getVoices();
     arr_voices = voices.filter(voice => voice.lang === "en-US" || voice.lang === "en-GB");
+
+    if(arr_voices.length !== 0){
+        arr_voices.forEach(voice => {
+            const option = document.createElement('option');
+        // Fill option with voice and language
+        option.textContent = voice.name;
+        voiceSelect.appendChild(option);
+        })
+    }
 }
 
 ChooseVoices();
@@ -39,12 +52,12 @@ function Speak() {
         const read_story = new SpeechSynthesisUtterance(story_content.value);
 
         //Hide the tell story button and display the stop story button
-        tell_story.style.display = "none";
+        dashBoard.style.display = "none";
         stop_story.style.display = "block";
 
         //Speak end
         read_story.onend = function(){
-            tell_story.style.display = "block";
+            dashBoard.style.display = "flex";
             stop_story.style.display = "none";
         }
 
@@ -53,10 +66,12 @@ function Speak() {
             console.error('Something went wrong');
         }
 
-        //Random english voice selector
-        arr_voices.sort(() => Math.random() - 0.5);
-        read_story.voice = arr_voices[0];
-        console.log(arr_voices[0])
+        //Choosing the voice
+        const selectedVoice = arr_voices.find(voice => voice.name === voiceSelect.value)
+        read_story.voice = selectedVoice;
+
+        //Choosing the speed
+        read_story.rate = speedSelect.value;
 
         //Speak
         synth.speak(read_story);
@@ -76,7 +91,7 @@ tell_story.addEventListener("click", function(e){
 });
 
 stop_story.addEventListener("click", function(){
-    tell_story.style.display = "block";
+    dashBoard.style.display = "flex";
     stop_story.style.display = "none";
     synth.cancel();
 })
@@ -91,4 +106,10 @@ var homebtn = document.getElementById("homebtn");
 
 homebtn.addEventListener("click",function(){
     location.replace("index.html")
+})
+
+var speedLabel = document.getElementById("speed-value")
+
+speedSelect.addEventListener("input", function(){
+    speedLabel.innerText = speedSelect.value;
 })
