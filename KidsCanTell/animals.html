@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Can Tell</title>
+    <link rel="icon" href="assets/KCT-Logo.png">
+    <link rel="stylesheet" href="animals.css">
+</head>
+</head>
+<body>
+    <div class="instruction container">
+        <button type="button" class="home-btn" id="homebtn">HOME</button>
+        <h2>INSTRUCTIONS</h2>
+        <ul>
+            <li>Click the speak button and say out loud your answer to identify the animal shown</li>
+            <li>If the answer is correct you will move to the next animal</li>
+            <li>If the answer is incorrect you can try again</li>
+        </ul>
+        <button type="button" class="reload-btn" id="refresh">Restart Activity</button>
+    </div>
+    <div class="slides container">
+        <h1 id="title">Identify the animal shown</h1>
+        <div class="slides">
+            <img id="animalpics">
+        </div>
+        <div class="endbtns">
+            <button type="button" class="end" id="again">Play Again</button>
+            <button type="button" class="end" id="homepage">Home</button>
+        </div>
+        <button type="button" class="speak-btn" id="speakbtn">Speak</button>
+        <span id="status">Speaking...</span>
+    </div>
+    <div class="output container">
+        <h2 id="checker"></h2>
+        <h2 id='message'>You said:</h2>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch-jsonp/1.0.6/fetch-jsonp.min.js">
+        document.cookie = "SameSite=none;Secure"
+    </script>
+    <script src="animals.js"></script>
+</body>
+</html>

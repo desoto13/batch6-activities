@@ -1,0 +1,26 @@
+body{
+    display:flex;
+    justify-content: space-around;
+}
+
+.container{
+    flex:1;
+}
+
+    .slides{
+        height: 30vw;
+        width: 30vw;
+    }
+
+    #animalpics{
+        height:100%;
+        width:100%;
+    }
+
+    #status{
+        display:none;
+    }
+
+    .endbtns{
+        display:none;
+    }

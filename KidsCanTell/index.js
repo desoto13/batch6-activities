@@ -20,3 +20,7 @@ shapes.addEventListener("mouseenter", function(){
 stories.addEventListener("click", function(){
    location.replace("stories.html");
 })
+
+animals.addEventListener("click", function(){
+    location.replace("animals.html")
+})
