@@ -1,0 +1,127 @@
+body{
+}
+
+    #circle{
+        grid-area:circle;
+        width: 8vw;
+        height: 8vw;
+        border: 2px black solid;
+        border-radius: 50%
+    }
+    
+    #square{
+        grid-area:square;
+        width: 8vw;
+        height: 8vw;
+        border: 2px black solid;
+    }
+
+    #triangle{
+        grid-area:triangle;
+        width: 0;
+        height: 0;
+        border-left: 4vw solid transparent;
+        border-right: 4vw solid transparent;
+        border-bottom: 8vw solid gray;
+    }
+
+    #oval{
+        grid-area:oval;
+        width: 10vw;
+        height: 5vw;
+        background: white;
+        border: 2px black solid;
+        border-radius: 50%;
+    }
+
+    #rectangle{
+        grid-area:rectangle;
+        width: 10vw;
+        height: 5vw;
+        background: white;
+        border: 2px black solid;
+    }
+
+    #star {
+        margin: 4vw 0;
+        position: relative;
+        display: block;
+        color: gray;
+        width: 0px;
+        height: 0px;
+        border-right: 8vw solid transparent;
+        border-bottom: 5.6vw solid gray;
+        border-left: 8vw solid transparent;
+        transform: rotate(35deg);
+      }
+      #star:before {
+        border-bottom: 6.4vw solid gray;
+        border-left: 2.4vw solid transparent;
+        border-right: 2.4vw solid transparent;
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -3.6vw;
+        left: -5.2vw;
+        display: block;
+        content: '';
+        transform: rotate(-35deg);
+      }
+      #star:after {
+        position: absolute;
+        display: block;
+        color: gray;
+        top: 0.24vw;
+        left: -8.4vw;
+        width: 0px;
+        height: 0px;
+        border-right: 8vw solid transparent;
+        border-bottom: 5.6vw solid gray;
+        border-left: 8vw solid transparent;
+        transform: rotate(-70deg);
+        content: '';
+      }
+
+      #heart {
+        position: relative;
+        width: 8vw;
+        height: 7.2vw;
+      }
+      #heart:before,
+      #heart:after {
+        position: absolute;
+        content: "";
+        left: 4vw;
+        top: 0;
+        width: 4vw;
+        height: 6.4vw;
+        background: red;
+        border-radius: 4vw 4vw 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+      #heart:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+
+      #diamond {
+        width: 0;
+        height: 0;
+        border: 4vw solid transparent;
+        border-bottom: 5.6vw solid gray;
+        position: relative;
+        top: -4vw;
+      }
+      #diamond:after {
+        content: '';
+        position: absolute;
+        left: -4vw;
+        top: 5.6vw;
+        width: 0;
+        height: 0;
+        border: 4vw solid transparent;
+        border-top: 5.6vw solid gray;
+      }
+    
