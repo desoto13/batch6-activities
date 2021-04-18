@@ -55,6 +55,7 @@ speak_button.addEventListener('click', function(){
     status_display.style.display = "block";
 });
 
+//Populate the pictures of animals
 var arr_animals = [];
 var animal_pics = document.getElementById("animalpics");
 
@@ -89,6 +90,7 @@ var checker = document.getElementById("checker");
 var endbtns = document.querySelector(".endbtns");
 var title = document.getElementById("title");
 
+//processing the words spoken
 function spokenAnswer(answer) {
     let current_animal = arr_animals.find(url => url.pic_url === animal_pics.src);
     let index_current_animal = arr_animals.findIndex(url => url.pic_url === animal_pics.src);

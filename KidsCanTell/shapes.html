@@ -9,28 +9,45 @@
     <link rel="stylesheet" href="shapes.css">
 </head>
 <body>
-    <div class="instruction container">
+    <div class="instruction-container">
         <button type="button" class="home-btn" id="homebtn">HOME</button>
         <h2>INSTRUCTIONS</h2>
         <ul>
             <li>Click the speak button and say out loud the shape and color.</li>
-            <li>Your answer will color the shape.</li>
+            <li>Your answer will color the card containing that shape.</li>
             <li>Have Fun!</li>
         </ul>
         <button type="button" class="reload-btn" id="refresh">Restart Activity</button>
     </div>
-    <div class="activity container">
+    <div class="activity-container">
         <div class="shapes-container">
-            <div id="circle"></div>
-            <div id="square"></div>
-            <div id="triangle"></div>
-            <div id="oval"></div>
-            <div id="rectangle"></div>
-            <div id="star"></div>
-            <div id="heart"></div>
-            <div id="diamond"></div>
+            <div id="circle" class="shapes"><img class="shape-pic" src="assets/circle.png"></div>
+            <div id="square" class="shapes"><img class="shape-pic" src="assets/square.png"></div>
+            <div id="triangle" class="shapes"><img class="shape-pic" src="assets/triangle.png"></div>
+            <div id="oval" class="shapes"><img class="shape-pic" src="assets/oval.png"></div>
+            <div id="rectangle" class="shapes"><img class="shape-pic" src="assets/rectangle.png"></div>
+            <div id="star" class="shapes"><img class="shape-pic" src="assets/star.png"></div>
+            <div id="heart" class="shapes"><img class="shape-pic" src="assets/heart.png"></div>
+            <div id="diamond" class="shapes"><img class="shape-pic" src="assets/diamond.png"></div>
         </div>
-        <div class="dashboard-container"></div>
+        <div class="dashboard-container">
+            <div class="color-container">
+                <div id="red" class="color">RED</div>
+                <div id="orange" class="color">ORANGE</div>
+                <div id="yellow" class="color">YELLOW</div>
+                <div id="green" class="color">GREEN</div>
+                <div id="blue" class="color">BLUE</div>
+                <div id="indigo" class="color">INDIGO</div>
+                <div id="violet" class="color">VIOLET</div>
+                <div id="brown" class="color">BROWN</div>
+                <div id="white" class="color">WHITE</div>
+                <!-- <div id="black" class="color">BLACK</div> -->
+            </div>
+            <h2 id="message">You said:</h1>
+            <button type="button" class="speak-btn" id="speakbtn">Speak</button>
+            <span id="status">Speaking...</span>
+        </div>
     </div>
+    <script src="shapes.js"></script>
 </body>
 </html>

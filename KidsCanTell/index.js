@@ -24,3 +24,7 @@ stories.addEventListener("click", function(){
 animals.addEventListener("click", function(){
     location.replace("animals.html")
 })
+
+shapes.addEventListener("click", function(){
+    location.replace("shapes.html")
+})
