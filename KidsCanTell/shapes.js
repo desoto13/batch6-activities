@@ -73,8 +73,12 @@ function spokenAnswer(answer){
     let substring = answer.split(" ");
     let two_words = `${substring[0]} ${substring[1]}`;
 
-    let shape_chosen = shapes.filter(shape_obj => two_words.includes(shape_obj.shape));
-    let color_chosen = colors.filter(color_obj => two_words.includes(color_obj.color));
+    let shape_chosen = shapes.find(shape_obj => two_words.includes(shape_obj.shape));
+    let color_chosen = colors.find(color_obj => two_words.includes(color_obj.color));
 
-    shape_chosen[0].container.style.backgroundColor = color_chosen[0].color;
+    if(shape_chosen === undefined || color_chosen === undefined){
+        return console.log("command not recognized");
+    }
+
+    shape_chosen.container.style.backgroundColor = color_chosen.color;
 }
