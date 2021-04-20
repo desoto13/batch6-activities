@@ -1,14 +1,14 @@
 //Instruction Part
-var refresh = document.getElementById("refresh");
-
-refresh.addEventListener("click", function(){
-    location.reload();
-})
-
 var homebtn = document.getElementById("homebtn");
 
 homebtn.addEventListener("click",function(){
     location.replace("index.html")
+})
+
+var refresh = document.getElementById("refresh");
+
+refresh.addEventListener("click", function(){
+    location.reload();
 })
 
 //Speech Recognition

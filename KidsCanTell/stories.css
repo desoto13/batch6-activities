@@ -1,6 +1,94 @@
-body{
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  
+  body{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+    .title-container{
+      height:25%;
+    }
+  
+      .title-img-container{
+          height: 50%;
+          width: 30%;
+          margin-left: 0.7%;
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+      }
+  
+        .homebtn-container{
+          height: 70%;
+          width: 15%;
+        }
+  
+          #homebtn:hover{
+            cursor: pointer;
+          }
+  
+          .body-img{
+            height:100%;
+            width:100%;
+          }
+  
+        .title-img{
+            height: 100%;
+            width: 81.67%;
+          }
+  
+    .bigcircle-container{
+      display: flex;
+      position: fixed;
+      height: 26.25%;
+      width: 12.5%;
+      background-color: white;
+      left: 43.75%;
+      border-radius: 50%;
+      top: 8%;
+      justify-content: center;
+      align-items: center;
+    }
+  
+      .circle-container{
+        height: 80%;
+        width: 80%;
+        border-radius: 50%;
+        background-color: #C8A2C8;        ;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+  
+        #story-img{
+          height: 100%;
+          width: 100%;
+          margin-top: -25%;
+          margin-bottom: 25%;
+        }
+  
+        span {
+          margin-top: -30%;
+          font-family: 'Epilogue', sans-serif;
+          font-size: 95%;
+          font-weight: 700;
+          color:white;
+        }
+  
+    main{
+      height:75%;
+      background-color: #E5D6F3FF;
+      display: flex;
+    }
+
+.instruction-container{
+    display: none;
 }
 
 textarea {
@@ -9,7 +97,7 @@ textarea {
 
 .char-container{
     display:flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
 }

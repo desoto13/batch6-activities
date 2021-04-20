@@ -9,28 +9,45 @@
     <link rel="stylesheet" href="stories.css">
 </head>
 <body>
-    <div class="instruction-container">
-        <button type="button" class="home-btn" id="homebtn">HOME</button>
-        <h2>INSTRUCTIONS</h2>
-        <ul>
-            <li>Click the Tell Story button to read the text written</li>
-            <li>You can modify, create or copy from an outside source</li>
-            <li>Have FUN!</li>
-        </ul>
-        <button type="button" class="reload-btn" id="refresh">Reload Original Story</button>
+    <div class="title-container">
+        <div class="title-img-container">
+            <div id="homebtn" class="homebtn-container">
+                <img class="body-img" src="assets/home.png">
+            </div>
+            <div class="title-img">
+                <img class="body-img" src="assets/KCT-Title.png">
+            </div>
+        </div>
     </div>
-    <div class="form-container">
-        <h1 id="story-title">STORY</h1>
-        <textarea id="content" cols="60" rows="40"></textarea>
+    <div class="bigcircle-container">
+        <div class="circle-container">
+            <img id="story-img" src="assets/Stories.png">
+            <span>Stories</span>
+        </div>
     </div>
-    <div class="char-container">
-        <select id="voice-select"></select>
-        <label for="speed">Voice Speed</label>
-        <div id="speed-value">1</div>
-        <input type="range" id="rate" min="0.1" max="2" value="1" step="0.1">
-        <div class="char" id="tell-story">Tell Story</div>
-    </div>
-    <div class="char" id="stop">Stop</div>
+    <main>
+        <div class="instruction-container">
+            <h2>INSTRUCTIONS</h2>
+            <ul>
+                <li>Click the Tell Story button to read the text written</li>
+                <li>You can modify, create or copy from an outside source</li>
+                <li>Have FUN!</li>
+            </ul>
+            <button type="button" class="reload-btn" id="refresh">Reload Original Story</button>
+        </div>
+        <div class="form-container">
+            <h1 id="story-title">STORY</h1>
+            <textarea id="content" cols="60" rows="25"></textarea>
+        </div>
+        <div class="char-container">
+            <select id="voice-select"></select>
+            <label for="speed">Voice Speed</label>
+            <div id="speed-value">1</div>
+            <input type="range" id="rate" min="0.1" max="2" value="1" step="0.1">
+            <div class="char" id="tell-story">Tell Story</div>
+        </div>
+        <div class="char" id="stop">Stop</div>
+    </main>
     <script src="stories.js"></script>
 </body>
 </html>

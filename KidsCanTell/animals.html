@@ -9,32 +9,49 @@
     <link rel="stylesheet" href="animals.css">
 </head>
 <body>
-    <div class="instruction container">
-        <button type="button" class="home-btn" id="homebtn">HOME</button>
-        <h2>INSTRUCTIONS</h2>
-        <ul>
-            <li>Click the speak button and say out loud your answer to identify the animal shown</li>
-            <li>If the answer is correct you will move to the next animal</li>
-            <li>If the answer is incorrect you can try again</li>
-        </ul>
-        <button type="button" class="reload-btn" id="refresh">Restart Activity</button>
-    </div>
-    <div class="slides container">
-        <h1 id="title">Identify the animal shown</h1>
-        <div class="slides">
-            <img id="animalpics">
+    <div class="title-container">
+        <div class="title-img-container">
+            <div id="homebtn" class="homebtn-container">
+                <img class="body-img" src="assets/home.png">
+            </div>
+            <div class="title-img">
+                <img class="body-img" src="assets/KCT-Title.png">
+            </div>
         </div>
-        <div class="endbtns">
-            <button type="button" class="end" id="again">Play Again</button>
-            <button type="button" class="end" id="homepage">Home</button>
+    </div>
+    <div class="bigcircle-container">
+        <div class="circle-container">
+            <img id="story-img" src="assets/Animals.png">
+            <span>Animals</span>
         </div>
-        <button type="button" class="speak-btn" id="speakbtn">Speak</button>
-        <span id="status">Speaking...</span>
     </div>
-    <div class="output container">
-        <h2 id="checker"></h2>
-        <h2 id='message'>You said:</h2>
-    </div>
+    <main>
+        <div class="instruction-container">
+            <h2>INSTRUCTIONS</h2>
+            <ul>
+                <li>Click the speak button and say out loud your answer to identify the animal shown</li>
+                <li>If the answer is correct you will move to the next animal</li>
+                <li>If the answer is incorrect you can try again</li>
+            </ul>
+            <button type="button" class="reload-btn" id="refresh">Restart Activity</button>
+        </div>
+        <div class="slides container">
+            <h1 id="title">Identify the animal shown</h1>
+            <div class="slides">
+                <img id="animalpics">
+            </div>
+            <div class="endbtns">
+                <button type="button" class="end" id="again">Play Again</button>
+                <button type="button" class="end" id="homepage">Home</button>
+            </div>
+            <button type="button" class="speak-btn" id="speakbtn">Speak</button>
+            <span id="status">Speaking...</span>
+        </div>
+        <div class="output container">
+            <h2 id="checker"></h2>
+            <h2 id='message'>You said:</h2>
+        </div>
+    </main>
     <script src="animals.js"></script>
 </body>
 </html>
