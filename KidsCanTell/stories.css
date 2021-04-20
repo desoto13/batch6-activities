@@ -63,22 +63,22 @@ html, body{
       border-radius: 26px;
       background-image: linear-gradient(#D8DBE3, #F9FAFB);
       font-family: 'Fredoka One', cursive;
-      font-size: 150%;
+      font-size: 120%;
       box-shadow: 5px 5px 5px #D8DBE3;
     }
         
       #instructionbtn{
-      color: #ff9900ff;
+      color: #FFBD59;
     }
         
       #refresh{
-      color: #ff0000ff;
+      color: #FF5757;
     }
         
       #instructionbtn:hover, #refresh:hover{
       height: 36%;
       width: 36%;
-      font-size: 160%;
+      font-size: 140%;
       cursor: pointer;
     }
   
