@@ -238,7 +238,7 @@ html, body{
     border-radius: 26px;
     background-image: linear-gradient(#D8DBE3, #F9FAFB);
     font-family: 'Fredoka One', cursive;
-    font-size: 120%;
+    font-size: 100%;
     box-shadow: 5px 5px 5px #D8DBE3;
     width: 45%;
     height: 100%;
@@ -255,7 +255,7 @@ html, body{
   #homepage:hover, #again:hover{
     width: 46%;
     height: 101%;
-    font-size: 140%;
+    font-size: 110%;
     cursor: pointer;
   }
 
