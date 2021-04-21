@@ -30,14 +30,37 @@
         </div>
     </div>
     <main>
-        <div class="instruction-container">
-            <h2>INSTRUCTIONS</h2>
-            <ul>
-                <li>Click the speak button and say out loud your answer to identify the animal shown</li>
-                <li>If the answer is correct you will move to the next animal</li>
-                <li>If the answer is incorrect you can try again</li>
-            </ul>
-            <button type="button" class="reload-btn" id="refresh">Restart Activity</button>
+        <div class="paragraph-container">
+            <p id="message">
+                Hello there!<br><br>
+
+                I am your friend, Gerry the Giraffe.<br><br>
+
+                I am excited to introduce you to the rest of my animal friends.<br><br>
+
+                Can you identify all 10 of them?<br><br> 
+
+                If you’re ready, press the <br>PLAY button to start.
+            </p>
+            <button type="button" id="play">PLAY NOW</button>
+            <div class="speak-container">
+                <span id="label">Click to speak</span>
+                <div id="speakbtn" class="speak"><img id="mic" src="assets/mic-animals.png"></div>
+            </div>
+            <div id="end-containers">
+                <button type="button" class="end-btn" id="homepage">NO.<br>Back to Home</button>
+                <button type="button" class="end-btn" id="again">YES.<br>Play Again!</button>
+            </div>
+        </div>
+        <div class="slides-container">
+            <div class="animal-slides">
+                <img id="animalpics" src="assets/jungle.png">
+            </div>
+            <img id="gerry" src="assets/Gerry.png">
+        </div>
+        <!-- <div class="output container">
+            <h2 id="checker"></h2>
+            <h2 id='message'>You said:</h2>
         </div>
         <div class="slides container">
             <h1 id="title">Identify the animal shown</h1>
@@ -50,11 +73,7 @@
             </div>
             <button type="button" class="speak-btn" id="speakbtn">Speak</button>
             <span id="status">Speaking...</span>
-        </div>
-        <div class="output container">
-            <h2 id="checker"></h2>
-            <h2 id='message'>You said:</h2>
-        </div>
+        </div> -->
     </main>
     <script src="animals.js"></script>
 </body>

@@ -29,94 +29,106 @@ recognition.interimResults = false;
 recognition.onresult = function(event) {
     var last = event.results.length - 1;
     var command = event.results[last][0].transcript;
-    message.textContent = `You said: ${command}`;
-    spokenAnswer(command);
+    speak_button.style.display = "none";
+    message.innerText = `You said,\n\n "${command}"`;
+    setTimeout(function(){
+        spokenAnswer(command);
+    }, 3000); 
     }
 
-var status_display = document.getElementById("status");
-var speak_button = document.getElementById('speakbtn');
+// var status_display = document.getElementById("status");
+var speak_button = document.querySelector('.speak-container');
+var play_now =  document.getElementById("play");
+var speak_img = document.getElementById("speakbtn");
 
 recognition.onspeechend = function() {
     recognition.stop();
     setTimeout(function(){
-    speak_button.style.display = "block";
-    status_display.style.display = "none";
+        speak_img.classList.remove("redbg");
+        speak_button.addEventListener('click', recording);
     }, 3000);
     };
 
 recognition.onerror = function(event) {
     message.textContent = 'Error occurred in recognition: ' + event.error;
-    }        
+    }    
+    
+play_now.addEventListener("click", function(){
+    play_now.style.display = "none";
+    speak_button.style.display = "flex";
+    populateAnimals();
+})
 
-speak_button.addEventListener('click', function(){
+speak_button.addEventListener('click', recording);
+
+function recording(){
     recognition.start();
-    speak_button.style.display = "none";
-    status_display.innerText = "Speaking . . ."
-    status_display.style.display = "block";
-});
+    speak_img.classList.add("redbg");
+    speak_button.removeEventListener('click', recording);
+}
 
 //Populate the pictures of animals
 var arr_animals = [];
 var animal_pics = document.getElementById("animalpics");
 
 async function populateAnimals() {
-    // const response_bird = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://shibe.online/api/birds?count=1&urls=true&httpsUrls=true')}`);
-    // const response_cat = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://shibe.online/api/cats?count=1&urls=true&httpsUrls=true')}`);
-    // const response_dog = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://shibe.online/api/shibes?count=1&urls=true&httpsUrls=true')}`);
+    const response_bird = await fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('http://shibe.online/api/birds?count=1&urls=true&httpsUrls=true')}`);
+    const obj_bird = await response_bird.json();
 
-    // const obj_bird = await response_bird.json();
-    // const obj_cat = await response_cat.json();
-    // const obj_dog = await response_dog.json();
+    const bird = {pic_url:JSON.parse(obj_bird.contents)[0], animal:"bird", trivia:"This animal’s feather weighs more than its skeleton.\n\nWhat is this feathered animal?"};
+    const crocodile = {pic_url:"https://www.stockland.com.au/~/media/shopping-centre/common/everyday-ideas/kids/crocodile/0518_stocklandnational_crocodiles_900x6753.ashx", animal:"crocodile", trivia: "This is a reptile. They have the strongest bite of any animal in the world.\n\nMost live in fresh water rivers and lakes but some live in salt water.\n\nCan you identify this animal?"};
+    const elephant = {pic_url:"https://akamaividz2.zee5.com/image/upload/w_1170,h_658,c_scale,f_auto,q_auto/resources/0-0-newsauto_6ebkm2tjg3u0/list/unnamed_1517768988.jpg", animal:"elephant", trivia: "This is the world’s largest land animal.\n\nDo you know what this huge mammal is?"};
+    const fish = {pic_url:"https://api.time.com/wp-content/uploads/2019/11/fish-with-human-face-tik-tok-video.jpg?quality=85&w=1024&h=512&crop=1", animal:"fish", trivia: "They can live in high mountain streams, rivers, lakes, and all the way down to the bottom of the ocean.\n\nWhat are these cold-blooded animals?"};
+    const horse = {pic_url:"https://seaofmaryam.files.wordpress.com/2021/01/b9e3984b-56de-448a-96e1-227f49e6ba9a-49017-000010a274d980ec_file.jpg?w=3865", animal:"horse", trivia: "“Equine” is another word for this animal; that’s why people involved with them are called “equestrians.”\n\nDo you know what this beautiful animal is?"};
+    const monkey = {pic_url:"https://media.giphy.com/media/JrTCZg7iCvlwwPMnZX/giphy.gif", animal:"monkey", trivia: "This is a highly intelligent animal. Some of them live on the ground while others live in trees.\n\nWhat is this clever animal?"}
+    const panda = {pic_url:"https://media.giphy.com/media/bMSMRrBm9vLfa/giphy.gif", animal:"panda", trivia:"They spend a lot of their day eating, around 10-16 hours mainly feeding on bamboo.\n\nDo you know this cute animal?"};
+    const shark = {pic_url:"https://i.gifer.com/4qHp.gif", animal:"shark", trivia:"This animal never ever runs out of teeth. It has between 5 to 15 rows of teeth arranged in layers.\n\nWhat is this toothy animal?"};
+    const tiger = {pic_url:"https://i.gifer.com/Z8Dq.gif", animal:"tiger", trivia: "This animal is a carnivore, which means it only eats meat.\n\nNo two of these animals have the same stripes; they all have a unique pattern on their fur!\n\nCan you identify this striped animal?"};
+    const zebra = {pic_url:"https://media.giphy.com/media/frMawWBxD6OUuJXSSY/giphy.gif", animal:"zebra", trivia:"This is a black animal with white stripes. A group of this animal is called a “dazzle.”\n\nWhat is this cool-looking animal?"}
+    const end = {pic_url:"assets/done.png", animal:"end", trivia:"end"};
 
-    const ant = {pic_url:"https://assets.weforum.org/article/image/iG2OW598YFc8CbNvjmHcMhYGzm4JwRAvPV7eUyUmT04.jpg", animal:"ant"};
-    // const bird = {pic_url:JSON.parse(obj_bird.contents)[0], animal:"bird"};
-    // const cat = {pic_url:JSON.parse(obj_cat.contents)[0], animal:"cat"};
-    // const dog = {pic_url:JSON.parse(obj_dog.contents)[0], animal:"dog"};
-    const elephant = {pic_url:"https://c402277.ssl.cf1.rackcdn.com/photos/14206/images/hero_small/WW187785.jpg?1576774644", animal:"elephant"};
-    const fish = {pic_url:"https://i.gifer.com/RH88.gif", animal:"fish"};
-    const horse = {pic_url:"https://i.gifer.com/XnXK.gif", animal:"horse"};
-    const panda = {pic_url:"https://i.gifer.com/zq2.gif", animal:"panda"};
-    const shark = {pic_url:"https://i.gifer.com/4qHp.gif", animal:"shark"};
-    const tiger = {pic_url:"https://i.gifer.com/Z8Dq.gif", animal:"tiger"};
-
-    arr_animals = [ant, elephant, fish, horse, panda, shark, tiger];
+    arr_animals = [bird, crocodile, elephant, fish, horse, monkey, panda, shark, tiger, zebra, end];
     animal_pics.src = arr_animals[0].pic_url;
-    
+    message.innerText = arr_animals[0].trivia;
 }
 
-populateAnimals();
+var arr_correct = ["You got it!\n\nCan you guess the next one?", "You’re right!\nWOW! You’re awesome.\n\nI wonder what the next one is.",
+                    "That’s correct!\nYou’re doing great!\n\nLet’s see the next animal."]
 
-var checker = document.getElementById("checker");
-var endbtns = document.querySelector(".endbtns");
-var title = document.getElementById("title");
+var end_btns = document.getElementById("end-containers");
 
 //processing the words spoken
 function spokenAnswer(answer) {
     let current_animal = arr_animals.find(url => url.pic_url === animal_pics.src);
     let index_current_animal = arr_animals.findIndex(url => url.pic_url === animal_pics.src);
-    status_display.innerText = "Processing . . ."
+    let correct_ans = arr_correct.sort(() => Math.random() - 0.5);
     
-    if(current_animal.animal === answer && index_current_animal !== arr_animals.length-1){
-        checker.innerText = "Correct! Please wait while we load the next animal";
+    if(current_animal === undefined){
+        message.innerText = "Uh-oh! That’s incorrect.\n\nDon’t worry, you can always try again."
         setTimeout(function(){
-            checker.innerText = "";
-            message.textContent = "You said:"
-            animal_pics.src = arr_animals[index_current_animal + 1].pic_url;
+            message.innerText = arr_animals[index_current_animal].trivia;
+            speak_button.style.display = "flex";
         }, 3000);
     }
-    else if(current_animal.animal === answer && index_current_animal === arr_animals.length-1){
-        checker.innerText = "Correct! Please wait";
+    else if(current_animal.animal === answer && index_current_animal !== arr_animals.length-2){
+        message.innerText = correct_ans[0];
         setTimeout(function(){
-            checker.innerText = "";
-            message.textContent = "You said:"
-            animal_pics.style.display="none";
-            endbtns.style.display = "flex";
-            speak_button.style.display = "none";
-            title.innerText = "Congratulations! You finished the activity!"
-        }, 3100);
+            animal_pics.src = arr_animals[index_current_animal + 1].pic_url;
+            message.innerText = arr_animals[index_current_animal + 1].trivia;
+            speak_button.style.display = "flex";
+        }, 3000);
+    }
+    else if(current_animal.animal === answer && index_current_animal === arr_animals.length-2){
+        animal_pics.src = arr_animals[index_current_animal + 1].pic_url;
+        message.innerText = "VERY GOOD!\nYou got all 10 animals!\n\nDo you wanna play again?";
+        end_btns.style.display = "flex";
     }
     else{
-        checker.innerText = "Please Try Again";
+        message.innerText = "Uh-oh! That’s incorrect.\n\nDon’t worry, you can always try again.";
+        setTimeout(function(){
+            message.innerText = arr_animals[index_current_animal].trivia;
+            speak_button.style.display = "flex";
+        }, 3000);
     }
 }
 

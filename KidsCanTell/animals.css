@@ -56,7 +56,7 @@ html, body{
     top: 14%;
   }
         
-            #refresh, #instructionbtn{
+            .univ-btn{
               border: 0;
               height: 35%;
               width: 35%;
@@ -121,17 +121,145 @@ html, body{
           color:white;
         }
   
-    main{
-      height:75%;
-      background-color: #C7F6B6FF;
+  main{
+    height:75%;
+    background-color: #C7F6B6FF;
+    display: flex;
+  }
+
+    .paragraph-container{
+      width: 40%;
       display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
-.instruction-container{
-    display: none;
-}
+    #message{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 7.5%;
+      width: 80%;
+      height: 70%;
+      font-family: 'Epilogue', sans-serif;
+      font-size: 185%;
+      font-weight: 700;
+      line-height: 1.15;
+    }
 
-.container{
+    #play{
+      border: 0;
+      height: 10%;
+      width: 30%;
+      border-radius: 26px;
+      background-image: linear-gradient(#D8DBE3, #F9FAFB);
+      font-family: 'Fredoka One', cursive;
+      font-size: 120%;
+      box-shadow: 5px 5px 5px #D8DBE3;
+      color: green;
+      display: block;
+    }
+
+    #play:hover{
+      height: 11%;
+      width: 31%;
+      font-size: 140%;
+      cursor: pointer;
+    }
+
+    .speak-container{
+      display: none;
+      flex-direction: column;
+      height: 15%;
+      width: 30%;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #label{
+      color: blue;
+      font-family: 'Epilogue', sans-serif;
+    }
+
+    .speak{
+      margin-top: 4%;
+      height: 100%;
+      width: 50%;
+      background-color: rgb(0, 0, 0, 0.2);
+      border-radius: 50%;
+    }
+
+      #mic{
+        height: 100%;
+        width: 100%;
+      }
+    
+    .redbg{
+      background-color: red;
+    }
+    
+    #speakbtn:hover{
+      background-color: red;
+      cursor: pointer;
+    }
+
+
+    .slides-container{
+      width: 60%;
+    }
+
+    #gerry{
+      width:115%;
+      height: 100%;
+    }
+
+    #animalpics{
+      width:100%;
+      height: 100%;
+    }
+
+    .animal-slides{
+      position: fixed;
+      height: 45%;
+      width: 31.2%;
+      right: 5.8%;
+      bottom: 6.9%;
+    }
+  
+  #end-containers{
+    display:none;
+    width: 60%;
+    height: 10.5%;
+    justify-content: space-around;
+  }
+
+  .end-btn{
+    border-radius: 26px;
+    background-image: linear-gradient(#D8DBE3, #F9FAFB);
+    font-family: 'Fredoka One', cursive;
+    font-size: 120%;
+    box-shadow: 5px 5px 5px #D8DBE3;
+    width: 45%;
+    height: 100%;
+  }
+
+  #homepage{
+    color: #FF5757;
+  }
+
+  #again{
+    color: #13AB54;
+  }
+
+  #homepage:hover, #again:hover{
+    width: 46%;
+    height: 101%;
+    font-size: 140%;
+    cursor: pointer;
+  }
+
+/* .container{
     flex:1;
 }
 
@@ -155,4 +283,4 @@ html, body{
 
     .endbtns{
         display:none;
-    }
+    } */
