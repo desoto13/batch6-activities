@@ -228,6 +228,7 @@ html, body{
     }
   
   #end-containers{
+    margin-top: -7.5%;
     display:none;
     width: 70%;
     height: 10.5%;
