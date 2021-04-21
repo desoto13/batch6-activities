@@ -82,8 +82,8 @@ async function populateAnimals() {
     const horse = {pic_url:"https://seaofmaryam.files.wordpress.com/2021/01/b9e3984b-56de-448a-96e1-227f49e6ba9a-49017-000010a274d980ec_file.jpg?w=3865", animal:"horse", trivia: "“Equine” is another word for this animal; that’s why people involved with them are called “equestrians.”\n\nDo you know what this beautiful animal is?"};
     const monkey = {pic_url:"https://media.giphy.com/media/JrTCZg7iCvlwwPMnZX/giphy.gif", animal:"monkey", trivia: "This is a highly intelligent animal. Some of them live on the ground while others live in trees.\n\nWhat is this clever animal?"}
     const panda = {pic_url:"https://media.giphy.com/media/bMSMRrBm9vLfa/giphy.gif", animal:"panda", trivia:"They spend a lot of their day eating, around 10-16 hours mainly feeding on bamboo.\n\nDo you know this cute animal?"};
-    const shark = {pic_url:"https://i.gifer.com/4qHp.gif", animal:"shark", trivia:"This animal never ever runs out of teeth. It has between 5 to 15 rows of teeth arranged in layers.\n\nWhat is this toothy animal?"};
-    const tiger = {pic_url:"https://i.gifer.com/Z8Dq.gif", animal:"tiger", trivia: "This animal is a carnivore, which means it only eats meat.\n\nCan you identify this striped animal?"};
+    const shark = {pic_url:"https://media.giphy.com/media/5wFxuxzDacm4aEUJNY/giphy.gif", animal:"shark", trivia:"This animal never ever runs out of teeth. It has between 5 to 15 rows of teeth arranged in layers.\n\nWhat is this toothy animal?"};
+    const tiger = {pic_url:"https://media.giphy.com/media/3o6Zt9fiqF4N4VrFok/giphy.gif", animal:"tiger", trivia: "This animal is a carnivore, which means it only eats meat.\n\nCan you identify this striped animal?"};
     const zebra = {pic_url:"https://media.giphy.com/media/frMawWBxD6OUuJXSSY/giphy.gif", animal:"zebra", trivia:"This is a black animal with white stripes. A group of this animal is called a “dazzle.”\n\nWhat is this cool-looking animal?"}
     const end = {pic_url:"assets/done.png", animal:"end", trivia:"end"};
 
