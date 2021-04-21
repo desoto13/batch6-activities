@@ -158,7 +158,7 @@ html, body{
       font-size: 120%;
       box-shadow: 5px 5px 5px #D8DBE3;
       color: green;
-      display: none;
+      display: block;
     }
 
     #play:hover{
@@ -228,7 +228,7 @@ html, body{
     }
   
   #end-containers{
-    display:flex;
+    display:none;
     width: 70%;
     height: 10.5%;
     justify-content: space-around;
