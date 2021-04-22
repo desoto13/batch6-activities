@@ -4,15 +4,15 @@ synth.cancel();
 var story_content = document.getElementById("content");
 story_content.value = "I think that I shall never see,\
 \nA poem lovely as a tree.\
-\nA tree whose hungry mouth is prest\
-\nAgainst the earth's sweet flowing breast;\
-\nA tree that looks at God all day,\
-\nAnd lifts her leafy arms to pray;\
-\nA tree that may in Summer wear\
-\nA nest of robins in her hair;\
-\nUpon whose bosom snow has lain;\
+\n\nA tree whose hungry mouth is prest\
+\nAgainst the earth's sweet flowing breast.\
+\n\nA tree that looks at God all day,\
+\nAnd lifts her leafy arms to pray.\
+\n\nA tree that may in Summer wear\
+\nA nest of robins in her hair.\
+\n\nUpon whose bosom snow has lain,\
 \nWho intimately lives with rain.\
-\nPoems are made by fools like me,\
+\n\nPoems are made by fools like me,\
 \nBut only God can make a tree."
 
 
@@ -20,7 +20,6 @@ var tell_story = document.getElementById("tell-story");
 var stop_story = document.getElementById("stop");
 var voiceSelect = document.getElementById("voice-select");
 var speedSelect = document.getElementById("rate");
-var dashBoard = document.querySelector(".char-container")
 
 var voices = [];
 var arr_voices = [];
@@ -52,12 +51,12 @@ function Speak() {
         const read_story = new SpeechSynthesisUtterance(story_content.value);
 
         //Hide the tell story button and display the stop story button
-        dashBoard.style.display = "none";
+        tell_story.style.display = "none";
         stop_story.style.display = "block";
 
         //Speak end
         read_story.onend = function(){
-            dashBoard.style.display = "flex";
+            tell_story.style.display = "block";
             stop_story.style.display = "none";
         }
 
@@ -91,7 +90,7 @@ tell_story.addEventListener("click", function(e){
 });
 
 stop_story.addEventListener("click", function(){
-    dashBoard.style.display = "flex";
+    tell_story.style.display = "block";
     stop_story.style.display = "none";
     synth.cancel();
 })

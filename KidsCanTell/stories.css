@@ -153,7 +153,7 @@ html, body{
           width: 10%;
           position:fixed;
           left: 14%;
-          top: 27%;
+          top: 26%;
         }
 
         #bookie{
@@ -202,9 +202,16 @@ html, body{
           #tell-story {
             height: 80%;
             width: 20%;
+            display:block;
           }
 
-          #playimg, .symbol-img{
+          #stop{
+            height: 80%;
+            width: 20%;
+            display:none;
+          }
+
+          .playimg, .symbol-img{
             height:100%;
             width: 100%;
           }
@@ -260,29 +267,58 @@ html, body{
             
 textarea {
     resize: none;
+    background-color: transparent;
+    border: 0;
+    text-align: center;
 }
 
 .char-container{
     display:flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 30%;
 }
 
-.char{
+  .content-container{
+    position: fixed;
+    /* border: 2px solid black; */
+    left:58.5%;
+    top: 32%;
+    height: 56%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Epilogue', sans-serif;
+    /* justify-content: space-between; */
+
+  }
+
+  .frame-container{
+    height:90%;
+    width: 80%;
+  }
+
+  #frame {
+    height: 100%;
+    width: 100%;
+  }
+
+/* .char{
     display:block;
     margin-top: 20px;
     background-color: blue;
     color: white;
     padding: 10px;
-}
+} */
 
-#stop{
+/* #stop{
     display: none;
     height: 20px;
     width: 40px;
     align-self: center;
-}
+} */
 
-#tell-story:hover, #stop:hover{
+#tell-story:hover, #voice-select:hover, #rate:hover{
     cursor: pointer;
 }

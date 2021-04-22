@@ -45,13 +45,13 @@
 
                 I can’t wait to read your story.  Let’s start writing!
             </p>
-            <div class="sound-container">
-                <img id="soundwaves" src="https://img.17qq.com/images/qrsccthseax.jpeg?fbclid=IwAR36-C75OccGgkLy3IT4u_JvFVpSCQBVi5RNornWc2JIai1u5OA0gQvWKr8">
-            </div>
             <div class="dashbtns-container">
                 <div class="play-container">
                     <div id="tell-story">
-                        <img id="playimg" src="assets/playbtn.png">
+                        <img class="playimg" src="assets/playbtn.png">
+                    </div>
+                    <div id="stop">
+                        <img class="playimg" src="assets/stopbtn.png">
                     </div>
                     <select id="voice-select">
                         <option value="none" selected disabled hidden>VOICES</option>
@@ -72,9 +72,15 @@
             </div>
         </div>
         <div class="char-container">
-            <textarea id="content" cols="60" rows="25" placeholder="Write Here"></textarea>
+            <div class="content-container">
+                <h2 class="content-title">LET'S WRITE A STORY</h2>
+                <textarea id="content" cols="40" rows="25" placeholder="Write Here"></textarea>
+            </div>
+            <div class="frame-container">
+                <img id="frame" src="assets/book.png">
+            </div>
         </div>
-        <div class="char" id="stop">Stop</div>
+        <!-- <div class="char" id="stop">Stop</div> -->
         <div class="bg-container">
             <img class="bg" src="assets/storiesbgright.png">
         </div>
