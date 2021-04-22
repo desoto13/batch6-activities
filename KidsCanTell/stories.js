@@ -110,5 +110,5 @@ homebtn.addEventListener("click",function(){
 var speedLabel = document.getElementById("speed-value")
 
 speedSelect.addEventListener("input", function(){
-    speedLabel.innerText = speedSelect.value;
+    speedLabel.innerText = `${speedSelect.value}x`;
 })
