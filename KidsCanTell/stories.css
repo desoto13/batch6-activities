@@ -201,13 +201,13 @@ html, body{
 
           #tell-story {
             height: 80%;
-            width: 20%;
+            width: 15%;
             display:block;
           }
 
           #stop{
             height: 80%;
-            width: 20%;
+            width: 15%;
             display:none;
           }
 
@@ -256,11 +256,11 @@ html, body{
 
             .range-symbol{
               height: 100%;
-              width: 20%;
+              width: 15%;
             }
 
             #rate{
-              width: 50%;
+              width: 60%;
             }
 
 
@@ -318,6 +318,6 @@ textarea {
     align-self: center;
 } */
 
-#tell-story:hover, #voice-select:hover, #rate:hover{
+#tell-story:hover, #voice-select:hover, #rate:hover, #stop:hover{
     cursor: pointer;
 }
