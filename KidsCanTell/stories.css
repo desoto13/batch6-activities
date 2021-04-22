@@ -282,9 +282,10 @@ textarea {
 
   .content-container{
     position: fixed;
-    right: 21.5%;
+    right: 20%;
     bottom: 12%;
     height: 56%;
+    width: 22%;
     display: flex;
     flex-direction: column;
     align-items: center;
