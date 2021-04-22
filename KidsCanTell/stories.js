@@ -2,7 +2,7 @@ var synth = window.speechSynthesis;
 synth.cancel();
 
 var story_content = document.getElementById("content");
-story_content.value = "I think that I shall never see\
+story_content.value = "I think that I shall never see,\
 \nA poem lovely as a tree.\
 \nA tree whose hungry mouth is prest\
 \nAgainst the earth's sweet flowing breast;\

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids Can Tell</title>
-    <link rel="icon" href="assets/KCT-logo.png">
+    <link rel="icon" href="assets/KCT-Logo.png">
     <link rel="stylesheet" href="stories.css">
 </head>
 <body>
@@ -30,27 +30,54 @@
         </div>
     </div>
     <main>
-        <div class="instruction-container">
-            <h2>INSTRUCTIONS</h2>
-            <ul>
-                <li>Click the Tell Story button to read the text written</li>
-                <li>You can modify, create or copy from an outside source</li>
-                <li>Have FUN!</li>
-            </ul>
-            <button type="button" class="reload-btn" id="refresh">Reload Original Story</button>
+        <div class="bg-container">
+            <img class="bg" src="assets/storiesbgleft.png">
         </div>
-        <div class="form-container">
-            <h1 id="story-title">STORY</h1>
-            <textarea id="content" cols="60" rows="25"></textarea>
+        <div class="dashboard">
+            <div class="bookworm">
+                <img id="bookie" src="assets/bookie.png">
+            </div>
+            <p id="intro">
+                Hello there!<br><br>
+
+                I am your friend,<br>
+                Bookie the Bookworm.<br><br>
+
+                I can’t wait to read your story.  Let’s start writing!
+            </p>
+            <div class="sound-container">
+                <img id="soundwaves" src="https://img.17qq.com/images/qrsccthseax.jpeg?fbclid=IwAR36-C75OccGgkLy3IT4u_JvFVpSCQBVi5RNornWc2JIai1u5OA0gQvWKr8">
+            </div>
+            <div class="dashbtns-container">
+                <div class="play-container">
+                    <div id="tell-story">
+                        <img id="playimg" src="assets/playbtn.png">
+                    </div>
+                    <select id="voice-select">
+                        <option value="none" selected disabled hidden>VOICES</option>
+                    </select>
+                </div>
+                <div class="speed-container">
+                    <label for="speed">SPEAKING RATE <div id="speed-value">1</div></label>
+                    <div class="range-container">
+                        <div class="range-symbol">
+                            <img class="symbol-img" src="assets/turtle.png">
+                        </div>
+                        <input type="range" id="rate" min="0.1" max="2" value="1" step="0.1">
+                        <div class="range-symbol">
+                            <img class="symbol-img" src="assets/rabbit.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="char-container">
-            <select id="voice-select"></select>
-            <label for="speed">Voice Speed</label>
-            <div id="speed-value">1</div>
-            <input type="range" id="rate" min="0.1" max="2" value="1" step="0.1">
-            <div class="char" id="tell-story">Tell Story</div>
+            <textarea id="content" cols="60" rows="25" placeholder="Write Here"></textarea>
         </div>
         <div class="char" id="stop">Stop</div>
+        <div class="bg-container">
+            <img class="bg" src="assets/storiesbgright.png">
+        </div>
     </main>
     <script src="stories.js"></script>
 </body>
