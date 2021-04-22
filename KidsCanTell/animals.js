@@ -40,6 +40,18 @@ recognition.onresult = function(event) {
 var speak_button = document.querySelector('.speak-container');
 var play_now =  document.getElementById("play");
 var speak_img = document.getElementById("speakbtn");
+var bg_music = new Audio("assets/bg.mp4");
+if (typeof bg_music.loop == 'boolean')
+{
+    bg_music.loop = true;
+}
+else
+{
+    bg_music.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+}
 
 recognition.onspeechend = function() {
     recognition.stop();
@@ -56,6 +68,7 @@ recognition.onerror = function(event) {
 play_now.addEventListener("click", function(){
     play_now.style.display = "none";
     speak_button.style.display = "flex";
+    bg_music.play();
     populateAnimals();
 })
 
@@ -104,7 +117,7 @@ function spokenAnswer(answer) {
     let correct_ans = arr_correct.sort(() => Math.random() - 0.5);
     
     if(current_animal === undefined){
-        message.innerText = "Uh-oh! That’s incorrect.\n\nDon’t worry, you can always try again."
+        message.innerText = "Uh-oh! That’s incorrect.\n\nDon’t worry, you can always try again.";
         setTimeout(function(){
             message.innerText = arr_animals[index_current_animal].trivia;
             speak_button.style.display = "flex";
