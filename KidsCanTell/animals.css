@@ -182,18 +182,18 @@ html, body{
       font-family: 'Epilogue', sans-serif;
     }
 
-    .speak{
-      margin-top: 4%;
-      height: 100%;
-      width: 50%;
-      background-color: rgb(0, 0, 0, 0.2);
-      border-radius: 50%;
-    }
-
-      #mic{
+      .speak{
+        margin-top: 4%;
         height: 100%;
-        width: 100%;
+        width: 50%;
+        background-color: rgb(0, 0, 0, 0.2);
+        border-radius: 50%;
       }
+
+        #mic{
+          height: 100%;
+          width: 100%;
+        }
     
     .redbg{
       background-color: red;
@@ -260,29 +260,3 @@ html, body{
     font-size: 110%;
     cursor: pointer;
   }
-
-/* .container{
-    flex:1;
-}
-
-.output{
-    margin-top:7%;
-}
-
-    .slides{
-        height: 25vw;
-        width: 30vw;
-    }
-
-    #animalpics{
-        height:100%;
-        width:100%;
-    }
-
-    #status{
-        display:none;
-    }
-
-    .endbtns{
-        display:none;
-    } */

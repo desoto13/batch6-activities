@@ -30,42 +30,40 @@
         </div>
     </div>
     <main>
-        <div class="instruction-container">
-            <h2>INSTRUCTIONS</h2>
-            <ul>
-                <li>Click the speak button and say out loud the shape and color.</li>
-                <li>Your answer will color the shape.</li>
-                <li>Have Fun!</li>
-            </ul>
-            <button type="button" class="reload-btn" id="refresh">Restart Activity</button>
+        <div class="dashboard-container">
+            <h2 class="intro">
+                Come Aboard the Shape Train!<br>
+                    Let’s find and COLOR
+                        the shapes.
+            </h2>
+            <div class="color-container">
+                <div id="red" class="color">RED</div>
+                <div id="orange" class="color">ORANGE</div>
+                <div id="yellow" class="color">YELLOW</div>
+                <div id="green" class="color">GREEN</div>
+                <div id="blue" class="color">BLUE</div>
+                <div id="indigo" class="color">INDIGO</div>
+                <div id="violet" class="color">VIOLET</div>
+                <div id="brown" class="color">BROWN</div>
+            </div>
+            <!-- <h2 id="message">You said:</h1>
+            <button type="button" class="speak-btn" id="speakbtn">Speak</button> -->
+            <div class="speak-container">
+                <span id="label">Click to speak</span>
+                <div id="speakbtn" class="speak"><img id="mic" src="assets/mic-shapes.png"></div>
+            </div>
+            <!-- <span id="status">Speaking...</span> -->
         </div>
-        <div class="activity-container">
-            <div class="shapes-container">
-                <img id="circle" class="shape-pic" src="assets/circle.png">
-                <img id="square" class="shape-pic" src="assets/square.png">
-                <img id="triangle" class="shape-pic" src="assets/triangle.png">
-                <img id="oval" class="shape-pic" src="assets/oval.png">
-                <img id="rectangle" class="shape-pic" src="assets/rectangle.png">
-                <img id="star" class="shape-pic" src="assets/star.png">
-                <img id="heart" class="shape-pic" src="assets/heart.png">
-                <img id="diamond" class="shape-pic" src="assets/diamond.png">
-            </div>
-            <div class="dashboard-container">
-                <div class="color-container">
-                    <div id="red" class="color">RED</div>
-                    <div id="orange" class="color">ORANGE</div>
-                    <div id="yellow" class="color">YELLOW</div>
-                    <div id="green" class="color">GREEN</div>
-                    <div id="blue" class="color">BLUE</div>
-                    <div id="indigo" class="color">INDIGO</div>
-                    <div id="violet" class="color">VIOLET</div>
-                    <div id="brown" class="color">BROWN</div>
-                    <div id="white" class="color">WHITE</div>
-                </div>
-                <h2 id="message">You said:</h1>
-                <button type="button" class="speak-btn" id="speakbtn">Speak</button>
-                <span id="status">Speaking...</span>
-            </div>
+        <div class="shapes-container">
+            <img id="circle" class="shape-pic" src="assets/circle.png">
+            <img id="square" class="shape-pic" src="assets/square.png">
+            <img id="triangle" class="shape-pic" src="assets/triangle.png">
+            <img id="oval" class="shape-pic" src="assets/oval.png">
+            <img id="rectangle" class="shape-pic" src="assets/rectangle.png">
+            <img id="star" class="shape-pic" src="assets/star.png">
+            <img id="heart" class="shape-pic" src="assets/heart.png">
+            <img id="diamond" class="shape-pic" src="assets/diamond.png">
+            <img class="train" src="assets/Train.png">
         </div>
     </main>
     <script src="shapes.js"></script>

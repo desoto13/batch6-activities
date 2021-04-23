@@ -33,13 +33,13 @@ recognition.onresult = function(event) {
     spokenAnswer(command);
     }
 
-var status_display = document.getElementById("status");
+// var status_display = document.getElementById("status");
 var speak_button = document.getElementById('speakbtn');
 
 recognition.onspeechend = function() {
     recognition.stop();
     speak_button.style.display = "block";
-    status_display.style.display = "none";
+    // status_display.style.display = "none";
     }
 
 recognition.onerror = function(event) {
@@ -49,7 +49,7 @@ recognition.onerror = function(event) {
 speak_button.addEventListener('click', function(){
     recognition.start();
     speak_button.style.display = "none";
-    status_display.style.display = "block";
+    // status_display.style.display = "block";
 });
 
 //Array of Objects of shapes
@@ -65,8 +65,8 @@ var diamond = {container: document.getElementById("diamond"), shape: "diamond"};
 var shapes = [circle, square, triangle, oval, rectangle, star, heart, diamond];
 
 //Array of Objects of colors
-var colors = [{color:"red"},{color:"orange"},{color:"yellow"},{color:"green"},{color:"blue"},
-                {color:"indigo"},{color:"violet"},{color:"brown"},{color:"white"}];
+var colors = [{color:"red", code:"#ff0000ff"},{color:"orange", code:"#ff9900ff"},{color:"yellow", code: "#ffff00ff"},{color:"green", code:"#6aa84fff"}
+,{color:"blue", code:"#0073cfff"},{color:"indigo",code:"#4b0082ff"},{color:"violet",code:"#9400d3ff"},{color:"brown",code:"#964b00ff"}];
 
 
 function spokenAnswer(answer){
@@ -80,5 +80,5 @@ function spokenAnswer(answer){
         return console.log("command not recognized");
     }
 
-    shape_chosen.container.style.backgroundColor = color_chosen.color;
+    shape_chosen.container.style.backgroundColor = color_chosen.code;
 }
