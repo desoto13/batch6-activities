@@ -129,3 +129,15 @@ function spokenAnswer(answer){
     message.style.display = "none";
     speak.style.display="flex";
 }
+
+var instructionbtn = document.getElementById("instructionbtn");
+var show_instructions = document.getElementById("instruction-content");
+var returnbtn = document.getElementById("return");
+
+instructionbtn.addEventListener("click", function(){
+    show_instructions.style.display ="flex";
+})
+
+returnbtn.addEventListener("click", function(){
+    show_instructions.style.display = "none";
+})

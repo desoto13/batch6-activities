@@ -154,3 +154,14 @@ document.getElementById("homepage").addEventListener("click", function(){
     location.replace("index.html");
 })
 
+var instructionbtn = document.getElementById("instructionbtn");
+var show_instructions = document.getElementById("instruction-content");
+var returnbtn = document.getElementById("return");
+
+instructionbtn.addEventListener("click", function(){
+    show_instructions.style.display ="flex";
+})
+
+returnbtn.addEventListener("click", function(){
+    show_instructions.style.display = "none";
+})

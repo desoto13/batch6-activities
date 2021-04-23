@@ -112,3 +112,15 @@ var speedLabel = document.getElementById("speed-value")
 speedSelect.addEventListener("input", function(){
     speedLabel.innerText = `${speedSelect.value}x`;
 })
+
+var instructionbtn = document.getElementById("instructionbtn");
+var show_instructions = document.getElementById("instruction-content");
+var returnbtn = document.getElementById("return");
+
+instructionbtn.addEventListener("click", function(){
+    show_instructions.style.display ="flex";
+})
+
+returnbtn.addEventListener("click", function(){
+    show_instructions.style.display = "none";
+})
