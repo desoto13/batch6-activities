@@ -220,10 +220,11 @@ body{
     #label{
       color: red;
       font-family: 'Epilogue', sans-serif;
+      font-size: 80%;
     }
 
     .speak{
-      margin-top: 2%;
+      margin-top: 4%;
       height: 100%;
       width: 60%;
       background-color: rgb(0, 0, 0, 0.2);
@@ -240,22 +241,85 @@ body{
       cursor: pointer;
     }
 
+    .redbg{
+      background-color: red;
+    }
+
+    #message{
+      margin-top:12%;
+      text-align: center;
+      font-size: 175%;
+      font-family: 'Epilogue', sans-serif;
+      font-weight: 700;
+    }
+
   .shapes-container{
     height: 100%;
     width: 70%;
-    /* border: 2px solid blue; */
   }
 
   .shape-pic{
-    margin-top:0;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
-    height: 12vw;
-    width: 12vw;
+    margin:0;
+    height: 7.5vw;
+    width: 7.5vw;
     background-color: white;
+    position:fixed;
   }
 
-  #status{
+  .train{
+    margin-top: 12%;
+    height: 80%;
+    width:100%;
+  }
+
+    #star{
+      left: 40.25%;
+      bottom: 30.25%;
+    }
+
+    #oval{
+      right: 36%;
+      bottom: 46.5%;
+    }
+
+    #heart{
+      right: 27.5%;
+      bottom: 46.5%;
+    }
+
+    #rectangle{
+      right: 36%;
+      bottom: 21.5%;
+    }
+
+    #diamond{
+      right: 27.5%;
+      bottom: 21.5%;
+    }
+
+    #circle{
+      right: 12%;
+      bottom: 46.5%;
+    }
+
+    #square{
+      right: 3.5%;
+      bottom: 46.5%;
+    }
+
+    #triangle{
+      right: 7.75%;
+      bottom: 21.5%;
+    }
+
+    .smoke{
+      position:fixed;
+      height: 30%;
+      width: 30%;
+      bottom: 52%;
+    }
+
+  #message{
     display:none;
   }
 

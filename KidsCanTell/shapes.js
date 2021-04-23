@@ -29,16 +29,26 @@ recognition.interimResults = false;
 recognition.onresult = function(event) {
     var last = event.results.length - 1;
     var command = event.results[last][0].transcript;
-    message.textContent = `You said: ${command}`;
-    spokenAnswer(command);
+    message.innerText = `You said: ${command}`;
+    speak.style.display = "none";
+    message.style.display = "block";
+    setTimeout(function(){
+        spokenAnswer(command);
+        speak_button.classList.remove("redbg");
+        message.style.display = "none";
+        speak.style.display="flex";
+    }, 3000); 
     }
 
-// var status_display = document.getElementById("status");
 var speak_button = document.getElementById('speakbtn');
+var speak = document.querySelector(".speak-container");
 
 recognition.onspeechend = function() {
     recognition.stop();
-    speak_button.style.display = "block";
+    setTimeout(function(){
+        speak_button.classList.remove("redbg");
+        speak.style.display="flex";
+    },3000)
     // status_display.style.display = "none";
     }
 
@@ -48,7 +58,7 @@ recognition.onerror = function(event) {
 
 speak_button.addEventListener('click', function(){
     recognition.start();
-    speak_button.style.display = "none";
+    speak_button.classList.add("redbg");
     // status_display.style.display = "block";
 });
 
