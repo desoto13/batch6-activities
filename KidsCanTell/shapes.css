@@ -133,8 +133,6 @@ body{
     height: 100%;
     width: 30%;
     align-items: center;
-    /* justify-content: center; */
-    /* border: 2px solid red; */
   }
 
     .intro{
@@ -142,12 +140,10 @@ body{
       font-family: 'Epilogue', sans-serif;
       font-size: 175%;
       font-weight: 700;
-      /* border: 2px solid blue; */
       line-height: 1.25;
       text-align: center;
       width: 70%;
     }
-
 
     .color-container{
       display: flex;
@@ -206,10 +202,31 @@ body{
         #brown{
           background-color: #964b00ff;
         }
+
+  #play{
+    margin-top:10%;
+    border: 0;
+    height: 10%;
+    width: 30%;
+    border-radius: 26px;
+    background-image: linear-gradient(#D8DBE3, #F9FAFB);
+    font-family: 'Fredoka One', cursive;
+    font-size: 120%;
+    box-shadow: 5px 5px 5px #D8DBE3;
+    color: green;
+    display: block;
+  }
+
+    #play:hover{
+      height: 11%;
+      width: 31%;
+      font-size: 140%;
+      cursor: pointer;
+    }
  
   .speak-container{
     margin-top: 12%;
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 15%;
     width: 30%;
@@ -246,9 +263,10 @@ body{
     }
 
     #message{
+      display:none;
       margin-top:12%;
       text-align: center;
-      font-size: 175%;
+      font-size: 150%;
       font-family: 'Epilogue', sans-serif;
       font-weight: 700;
     }
@@ -259,6 +277,7 @@ body{
   }
 
   .shape-pic{
+    display: block;
     margin:0;
     height: 7.5vw;
     width: 7.5vw;
@@ -313,13 +332,13 @@ body{
     }
 
     .smoke{
+      display: block;
       position:fixed;
       height: 30%;
       width: 30%;
       bottom: 52%;
     }
 
-  #message{
-    display:none;
-  }
-
+    .hidden{
+      display: none;
+    }

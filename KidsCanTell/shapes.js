@@ -29,7 +29,7 @@ recognition.interimResults = false;
 recognition.onresult = function(event) {
     var last = event.results.length - 1;
     var command = event.results[last][0].transcript;
-    message.innerText = `You said: ${command}`;
+    message.textContent = `You said: ${command}`;
     speak.style.display = "none";
     message.style.display = "block";
     setTimeout(function(){
@@ -42,6 +42,7 @@ recognition.onresult = function(event) {
 
 var speak_button = document.getElementById('speakbtn');
 var speak = document.querySelector(".speak-container");
+var play = document.getElementById("play");
 
 recognition.onspeechend = function() {
     recognition.stop();
@@ -59,7 +60,6 @@ recognition.onerror = function(event) {
 speak_button.addEventListener('click', function(){
     recognition.start();
     speak_button.classList.add("redbg");
-    // status_display.style.display = "block";
 });
 
 //Array of Objects of shapes
@@ -73,11 +73,45 @@ var heart = {container: document.getElementById("heart"), shape: "heart"};
 var diamond = {container: document.getElementById("diamond"), shape: "diamond"};
 
 var shapes = [circle, square, triangle, oval, rectangle, star, heart, diamond];
+var smoke = document.getElementById("smoke");
 
 //Array of Objects of colors
 var colors = [{color:"red", code:"#ff0000ff"},{color:"orange", code:"#ff9900ff"},{color:"yellow", code: "#ffff00ff"},{color:"green", code:"#6aa84fff"}
 ,{color:"blue", code:"#0073cfff"},{color:"indigo",code:"#4b0082ff"},{color:"violet",code:"#9400d3ff"},{color:"brown",code:"#964b00ff"}];
 
+//COLOR
+var r = document.getElementById("r");
+var o = document.getElementById("o");
+var y = document.getElementById("y");
+var g = document.getElementById("g");
+var b = document.getElementById("b");
+var bg_music = new Audio("assets/bg.mp4");
+bg_music.volume = 0.2;
+if (typeof bg_music.loop == 'boolean')
+{
+    bg_music.loop = true;
+}
+else
+{
+    bg_music.addEventListener('ended', function() {
+        this.currentTime = 0;
+        this.play();
+    }, false);
+}
+
+play.addEventListener("click", function(){
+    shapes.forEach(shape => shape.container.classList.remove("hidden"));
+    speak.classList.remove("hidden");
+    smoke.classList.remove("hidden");
+    play.style.display = "none";
+    speak.style.display = "flex";
+    r.style.color = "#ff0000ff";
+    o.style.color = "#ff9900ff";
+    y.style.color = "#ffff00ff";
+    g.style.color = "#6aa84fff";
+    b.style.color = "#0073cfff";
+    bg_music.play();
+})
 
 function spokenAnswer(answer){
     let substring = answer.split(" ");
