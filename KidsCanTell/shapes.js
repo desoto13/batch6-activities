@@ -34,9 +34,6 @@ recognition.onresult = function(event) {
     message.style.display = "block";
     setTimeout(function(){
         spokenAnswer(command);
-        speak_button.classList.remove("redbg");
-        message.style.display = "none";
-        speak.style.display="flex";
     }, 3000); 
     }
 
@@ -121,8 +118,14 @@ function spokenAnswer(answer){
     let color_chosen = colors.find(color_obj => two_words.includes(color_obj.color));
 
     if(shape_chosen === undefined || color_chosen === undefined){
+        speak_button.classList.remove("redbg");
+        message.style.display = "none";
+        speak.style.display="flex";
         return console.log("command not recognized");
     }
 
     shape_chosen.container.style.backgroundColor = color_chosen.code;
+    speak_button.classList.remove("redbg");
+    message.style.display = "none";
+    speak.style.display="flex";
 }
