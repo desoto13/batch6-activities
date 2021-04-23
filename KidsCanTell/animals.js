@@ -40,7 +40,7 @@ recognition.onresult = function(event) {
 var speak_button = document.querySelector('.speak-container');
 var play_now =  document.getElementById("play");
 var speak_img = document.getElementById("speakbtn");
-var bg_music = new Audio("assets/bg.mp4");
+var bg_music = new Audio("assets/bganimals.mp4");
 bg_music.volume = 0.2;
 if (typeof bg_music.loop == 'boolean')
 {
