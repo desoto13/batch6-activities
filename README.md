@@ -1,49 +1,20 @@
-Portfolio Template
+<h1>Windel Misa Github Repositories for Avion School</h1>
 
-
-TITLE: 
-Story - 100% Fully Responsive Free HTML5 Bootstrap Template
-
-AUTHOR:
-DESIGNED & DEVELOPED by FREEHTML5.co
-
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
-
-
-CREDITS:
-
-Bootstrap
-http://getbootstrap.com/
-
-jQuery
-http://jquery.com/
-
-jQuery Easing
-http://gsgd.co.uk/sandbox/jquery/easing/
-
-Modernizr
-http://modernizr.com/
-
-Google Fonts
-https://www.google.com/fonts/
-
-Icomoon
-https://icomoon.io/app/
-
-Respond JS
-https://github.com/scottjehl/Respond/blob/master/LICENSE-MIT
-
-animate.css
-http://daneden.me/animate
-
-jQuery Waypoint
-https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
-
-Owl Carousel
-http://www.owlcarousel.owlgraphic.com/
-
-Demo Images:
-http://unsplash.com
+<ul>
+  <li><a href="https://github.com/desoto13/rails-base-project">Stockify</a></li>
+  <li><a href="https://github.com/desoto13/journal_app">TaskMaster</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/KidsCanTell">Kids Can Tell</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/BankApp">Banking Application</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/ChessGame">Chess Game</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/PigGame">Pig Game</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/PlayingCards">Playing Cards</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/TicTacToe">TIC-TAC-TOE</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/LandingPage">Landing Page</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/GridChess">Grid Chess</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/FlexChess">Flex Chess</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/SurveyForm">Survey Form</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/TributePage">Tribute Page</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/HTMLSemantics">HTML Semantics</a></li>
+  <li><a href="https://github.com/desoto13/batch6-activities/tree/main/BestPractice">Best Practice</a></li>
+</ul>
 
